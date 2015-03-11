@@ -1,0 +1,1 @@
+SELECT * from information_schema.columns where table_name='v_equipos'

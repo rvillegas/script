@@ -1,0 +1,8 @@
+SELECT [codigo]
+      ,[bodega]
+      ,[fecha]
+      ,[notas]
+      ,[usuario]
+      ,[fecha_actualiza]
+      ,[id_pk]
+  FROM [dbo].[flt_equipos_au]

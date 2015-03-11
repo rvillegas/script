@@ -1,0 +1,992 @@
+codigoÊdescripcion
+129.002.001.009ÊADMINISTRACION URABAÊ
+129.002.002.001ÊMantenimiento de viaÊ
+129.002.002.002ÊConstruccion de obras de drenaje y filtrosÊ
+129.002.002.003ÊPUENTE TURBOÊ
+129.002.002.004.004ÊMONTAJE Y ADECUACION PLANTAÊ
+129.002.005.001.017ÊTTR -AdministraciÛnÊ
+129.002.007.001.017ÊTNA -AdministraciÛnÊ
+129.004.006ÊGASTOS TALLER URABAÊ
+129.004.012ÊEQUIPO MENOR URABAÊ
+129.004.013ÊEQUIPO MENOR MONTERIAÊ
+129.004.028ÊCO-17Ê
+129.004.029ÊRR-06Ê
+129.004.030ÊVD-21Ê
+129.004.100ÊTI-04Ê
+129.004.101ÊVD-20Ê
+129.004.102ÊDV-01Ê
+129.004.103ÊVD-159Ê
+129.004.104ÊRO-48Ê
+129.004.105ÊRO-50Ê
+129.004.106ÊBO-39Ê
+129.004.107ÊCV-35Ê
+129.004.108ÊCV-36Ê
+129.004.109ÊCV-37Ê
+129.004.110ÊGASTOS TALLER MONTERIAÊ
+129.004.111ÊVD-148Ê
+129.004.112ÊPO-12Ê
+129.004.113ÊVD-165Ê
+129.004.114ÊEE-01Ê
+129.004.115ÊCA-43Ê
+129.004.116ÊRO-51Ê
+129.004.117ÊRMC-01Ê
+129.004.118ÊTN-55Ê
+129.004.119ÊTN-56Ê
+129.004.120ÊTN-57Ê
+129.004.121ÊCV-40Ê
+129.004.122ÊCV-39Ê
+129.004.123ÊCV-38Ê
+129.004.124ÊZR-07Ê
+129.004.125ÊTM-10Ê
+129.004.126ÊCB-10Ê
+129.004.127ÊCV-27Ê
+129.004.128ÊMC-15Ê
+129.004.129ÊBMC-04Ê
+129.004.130ÊDV-04Ê
+129.004.131ÊZR-06Ê
+129.004.132ÊCV-41Ê
+129.004.133ÊCV-42Ê
+129.004.134ÊCV-43Ê
+129.004.135ÊCV-44Ê
+129.004.136ÊRO-53Ê
+129.004.137ÊVD-235Ê
+129.004.138ÊVD-236Ê
+129.004.139ÊVD-237Ê
+129.004.140ÊVD-238Ê
+129.004.141ÊVD-239Ê
+129.004.142ÊCB-03Ê
+129.004.143ÊTP-15Ê
+129.004.144ÊTP-14Ê
+129.004.145ÊTP-12Ê
+129.004.146ÊCT-10Ê
+129.004.147ÊVD-287Ê
+129.004.148ÊVD-286Ê
+129.004.149ÊVD-285Ê
+129.004.150ÊVD-204Ê
+129.004.151ÊVD-202Ê
+129.004.152ÊVD-198Ê
+129.004.153ÊVD-197Ê
+129.004.154ÊVD-103Ê
+129.004.155ÊVD-110Ê
+129.004.156ÊVD-111Ê
+129.004.157ÊVD-261Ê
+129.004.158ÊVD-273Ê
+129.004.159ÊVD-264Ê
+129.004.160ÊVD-254Ê
+129.004.161ÊVD-275Ê
+129.004.162ÊVD-268Ê
+129.004.163ÊVD-301Ê
+129.004.164ÊBO-40Ê
+129.004.165ÊCA-45Ê
+129.004.166ÊMN-23Ê
+129.004.167ÊMN-24Ê
+129.004.168ÊCA-44Ê
+129.004.169ÊRR-05Ê
+129.004.170ÊMN-22Ê
+129.004.171ÊRO-55Ê
+129.004.172ÊBS-06Ê
+129.004.173ÊVD-251Ê
+129.004.174ÊVD-253Ê
+129.004.175ÊVD-272Ê
+129.004.176ÊVD-281Ê
+129.004.177ÊVD-290Ê
+129.004.178ÊCI-04Ê
+129.004.179ÊVD-252Ê
+129.004.180ÊVD-282Ê
+129.004.181ÊVD-284Ê
+129.004.182ÊVD-297Ê
+129.004.183ÊVD-299Ê
+129.004.184ÊRO-52Ê
+129.004.185ÊVD-230Ê
+129.004.186ÊVD-242Ê
+129.004.187ÊVD-256Ê
+129.004.188ÊVD-289Ê
+129.004.189ÊVD-295Ê
+129.004.190ÊVD-229Ê
+129.004.191ÊVD-232Ê
+129.004.192ÊVD-218Ê
+129.004.193ÊVD-262Ê
+129.004.194ÊVD-280Ê
+129.004.195ÊVD-283Ê
+129.004.196ÊVL-75Ê
+129.004.197ÊCR-02Ê
+129.004.198ÊTN-66Ê
+129.004.199ÊTN-67Ê
+129.004.200ÊTN-68Ê
+129.004.201ÊTN-62Ê
+129.004.202ÊTN-63Ê
+129.004.203ÊTN-64Ê
+129.004.204ÊTN-65Ê
+129.004.205ÊCM-18Ê
+129.004.206ÊMC-07Ê
+129.004.207ÊAHM-01Ê
+129.004.208ÊMMT-08Ê
+129.004.209ÊVD-260Ê
+129.004.210ÊVD-100Ê
+129.004.211ÊTRA-02Ê
+129.004.212ÊVD-67Ê
+129.004.213ÊCB-14Ê
+129.004.214ÊVD-247Ê
+129.004.215ÊVD-277Ê
+129.004.216ÊVD-196Ê
+129.004.217ÊVD-221Ê
+129.004.218ÊVD-257Ê
+129.004.219ÊVD-314Ê
+129.004.220ÊVD-315Ê
+129.004.221ÊVD-288Ê
+129.004.222ÊVD-318Ê
+129.004.223ÊVD-227Ê
+129.004.224ÊVD-213Ê
+129.004.225ÊVD-219Ê
+129.004.226ÊVD-310Ê
+129.004.227ÊVD-195Ê
+129.004.228ÊVD-199Ê
+129.004.229ÊVD-200Ê
+129.004.230ÊVD-207Ê
+129.004.231ÊVD-211Ê
+129.004.232ÊVD-222Ê
+129.004.233ÊVD-224Ê
+129.004.234ÊVD-233Ê
+129.004.235ÊVD-234Ê
+129.004.236ÊVD-255Ê
+129.004.237ÊVD-316Ê
+129.004.238ÊVD-317Ê
+129.004.239ÊVD-217Ê
+129.004.240ÊVD-259Ê
+129.004.241ÊCV-45Ê
+129.004.242ÊCV-46Ê
+129.004.243ÊVD-11Ê
+129.004.244ÊVD-17Ê
+129.004.245ÊVD-228Ê
+129.004.246ÊVD-249Ê
+129.004.247ÊVD-263Ê
+129.004.248ÊVD-296Ê
+129.004.249ÊVD-266Ê
+129.004.250ÊVD-270Ê
+129.004.251ÊVD-223Ê
+129.004.252ÊCO-07Ê
+129.004.253ÊVD-215Ê
+129.004.254ÊVD-220Ê
+129.004.255ÊVD-258Ê
+129.004.256ÊVD-265Ê
+129.004.257ÊVD-231Ê
+129.004.258ÊVD-319Ê
+129.004.259ÊVD-71Ê
+129.004.260ÊVD-276Ê
+129.004.261ÊBO-41Ê
+129.004.262ÊVD-274Ê
+129.004.263ÊVD-05Ê
+129.004.264ÊVD-06Ê
+129.004.265ÊVD-26Ê
+129.004.266ÊVD-35Ê
+129.004.267ÊVD-40Ê
+129.004.268ÊVD-43Ê
+129.004.269ÊVD-44Ê
+129.004.270ÊVD-45Ê
+129.004.271ÊVD-46Ê
+129.004.272ÊVD-47Ê
+129.004.273ÊVD-49Ê
+129.004.274ÊVD-89Ê
+129.004.275ÊVD-54Ê
+129.004.276ÊCO-22Ê
+129.004.277ÊCO-23Ê
+129.004.278ÊCI-05Ê
+129.004.279ÊRO-12Ê
+129.004.280ÊRO-41Ê
+129.004.281ÊMN-14Ê
+129.004.282ÊVD-302Ê
+129.004.283ÊEA-01Ê
+129.004.284ÊVL-77Ê
+129.004.285ÊVL-76Ê
+129.004.286ÊMMT-10Ê
+129.004.287ÊTM-07Ê
+129.004.288ÊTM-09Ê
+129.004.289ÊVM-08Ê
+129.004.290ÊTM-08Ê
+129.004.291ÊBO-16Ê
+129.004.292ÊRO-42Ê
+129.004.293ÊVD-70Ê
+129.004.294ÊCA-29Ê
+129.004.295ÊVD-131Ê
+129.004.296ÊMN-15Ê
+129.004.297ÊVL-69Ê
+129.004.298ÊCM-10Ê
+129.004.299ÊTM-06Ê
+129.004.300ÊCM-14Ê
+129.004.301ÊBMC-03Ê
+129.004.302ÊRO-40Ê
+129.004.303ÊFR-04Ê
+129.004.304ÊCM-20Ê
+129.004.305ÊRO-19Ê
+129.004.306ÊVD-90Ê
+129.004.307ÊDV-08Ê
+129.004.308ÊVD-16Ê
+129.004.309ÊVD-29Ê
+129.004.31ÊMN-20Ê
+129.004.310ÊMX-07Ê
+129.004.311ÊLU-05Ê
+129.004.312ÊVD-22Ê
+129.004.313ÊVD-65Ê
+129.004.314ÊVD-66Ê
+129.004.315ÊVD-116Ê
+129.004.316ÊVD-134Ê
+129.004.317ÊVD-118Ê
+129.004.318ÊVD-121Ê
+129.004.319ÊVD-124Ê
+129.004.32ÊMN-08Ê
+129.004.320ÊVD-153Ê
+129.004.321ÊVD-188Ê
+129.004.322ÊVD-55Ê
+129.004.323ÊMC-06Ê
+129.004.324ÊRO-31Ê
+129.004.325ÊMC-16Ê
+129.004.326ÊVL-43Ê
+129.004.327ÊMMT-05Ê
+129.004.328ÊTN-72Ê
+129.004.329ÊVL-79Ê
+129.004.33ÊCV-12Ê
+129.004.330ÊBO-31Ê
+129.004.331ÊMX-05Ê
+129.004.332ÊVL-29Ê
+129.004.333ÊMX-08Ê
+129.004.334ÊVD-128Ê
+129.004.335ÊVD-183Ê
+129.004.336ÊVD-122Ê
+129.004.337ÊMMT-11Ê
+129.004.338ÊRO-56Ê
+129.004.339ÊRO-57Ê
+129.004.34ÊCV-30Ê
+129.004.340ÊRO-58Ê
+129.004.341ÊBO-28Ê
+129.004.342ÊVL-80Ê
+129.004.343ÊMN-09Ê
+129.004.344ÊCA-32Ê
+129.004.345ÊBU-01Ê
+129.004.346ÊBU-02Ê
+129.004.347ÊBU-03Ê
+129.004.348ÊBU-04Ê
+129.004.349ÊCA-21Ê
+129.004.35ÊCV-17Ê
+129.004.350ÊCB-08Ê
+129.004.351ÊMX-01Ê
+129.004.352ÊCM-11Ê
+129.004.353ÊVL-59Ê
+129.004.354ÊCV-22Ê
+129.004.355ÊCM-09Ê
+129.004.356ÊCR-06Ê
+129.004.357ÊVD-123Ê
+129.004.358ÊVL-82Ê
+129.004.359ÊRO-62Ê
+129.004.36ÊCL-09Ê
+129.004.360ÊVD-91Ê
+129.004.361ÊVL-90Ê
+129.004.362ÊRO-61Ê
+129.004.363ÊRO-59Ê
+129.004.364ÊMN-27Ê
+129.004.365ÊRO-60Ê
+129.004.366ÊCA-46Ê
+129.004.367ÊCA-47Ê
+129.004.368ÊLU-10Ê
+129.004.369ÊLU-11Ê
+129.004.37ÊCV-18Ê
+129.004.370ÊLU-15Ê
+129.004.371ÊLU-16Ê
+129.004.372ÊCR-10Ê
+129.004.373ÊCR-12Ê
+129.004.374ÊRO-66Ê
+129.004.375ÊRO-64Ê
+129.004.376ÊDV-12Ê
+129.004.377ÊCR-14Ê
+129.004.378ÊCR-15Ê
+129.004.379ÊTN-75Ê
+129.004.38ÊCL-10Ê
+129.004.380ÊZR-10Ê
+129.004.381ÊVR-13Ê
+129.004.382ÊVR-14Ê
+129.004.383ÊVR-15Ê
+129.004.384ÊVR-16Ê
+129.004.385ÊFMC-01Ê
+129.004.386ÊCA-14Ê
+129.004.387ÊVL-97Ê
+129.004.388ÊCM-34Ê
+129.004.389ÊVL-98Ê
+129.004.39ÊCL-11Ê
+129.004.390ÊTN-77Ê
+129.004.391ÊRC-02Ê
+129.004.392ÊRC-01Ê
+129.004.393ÊVL-99Ê
+129.004.394ÊTT-03Ê
+129.004.395ÊCM-38Ê
+129.004.396ÊPL-42Ê
+129.004.397ÊDV-25Ê
+129.004.398ÊDV-24Ê
+129.004.399ÊDV-26Ê
+129.004.40ÊCV-33Ê
+129.004.400ÊTM-11Ê
+129.004.401ÊCR-20Ê
+129.004.402ÊCR-19Ê
+129.004.403ÊDV-27Ê
+129.004.404ÊDV-28Ê
+129.004.405ÊDV-29Ê
+129.004.406ÊDV-09Ê
+129.004.407ÊDV-14Ê
+129.004.408ÊDV-15Ê
+129.004.409ÊDV-16Ê
+129.004.41ÊCV-34Ê
+129.004.410ÊDV-17Ê
+129.004.411ÊDV-18Ê
+129.004.412ÊDV-20Ê
+129.004.413ÊDV-21Ê
+129.004.414ÊVD-63Ê
+129.004.415ÊVD-64Ê
+129.004.416ÊCO-28Ê
+129.004.417ÊVD-95Ê
+129.004.418ÊBU-06Ê
+129.004.419ÊVD-120Ê
+129.004.42ÊVD-176Ê
+129.004.420ÊDV-19Ê
+129.004.421ÊVD-117Ê
+129.004.422ÊVD-129Ê
+129.004.423ÊVD-132Ê
+129.004.424ÊVD-368Ê
+129.004.425ÊVD-163Ê
+129.004.426ÊVD-162Ê
+129.004.427ÊVD-178Ê
+129.004.428ÊVD-135Ê
+129.004.429ÊVD-342Ê
+129.004.43ÊVD-193Ê
+129.004.430ÊVD-142Ê
+129.004.431ÊMN-11Ê
+129.004.44ÊVD-92Ê
+129.004.45ÊVD-93Ê
+129.004.46ÊVD-98Ê
+129.004.47ÊCR-03Ê
+129.004.48ÊVD-98Ê
+129.004.49ÊCR-03Ê
+129.004.50ÊVD-172Ê
+129.004.51ÊVD-31Ê
+129.004.52ÊVL-51Ê
+129.004.53ÊVL-52Ê
+129.004.54ÊVL-54Ê
+129.004.55ÊVL-55Ê
+129.004.56ÊVL-66Ê
+129.004.57ÊVL-34Ê
+129.004.58ÊVL-58Ê
+129.004.59ÊVL-53Ê
+129.004.60ÊVL-62Ê
+129.004.61ÊVL-71Ê
+129.004.62ÊRO-30Ê
+129.004.63ÊRO-37Ê
+129.004.64ÊRO-38Ê
+129.004.65ÊCB-05Ê
+129.004.66ÊCA-05Ê
+129.004.67ÊCA-38Ê
+129.004.68ÊCA-39Ê
+129.004.69ÊCM-15Ê
+129.004.70ÊCM-12Ê
+129.004.71ÊCM-23Ê
+129.004.72ÊPA-09Ê
+129.004.73ÊTN-52Ê
+129.004.74ÊTN-53Ê
+129.004.75ÊTN-54Ê
+129.004.76ÊPT-17Ê
+129.004.77ÊCT-06Ê
+129.004.78ÊCT-05Ê
+129.004.79ÊZR-04Ê
+129.004.80ÊUT-04Ê
+129.004.81ÊZR-05Ê
+129.004.82ÊRP-01Ê
+129.004.83ÊPT-15Ê
+129.004.84ÊPT-18Ê
+129.004.85ÊPD-01Ê
+129.004.86ÊSD-07Ê
+129.004.87ÊCD-01Ê
+129.004.88ÊCD-02Ê
+129.004.89ÊBO-33Ê
+129.004.90ÊFR-03Ê
+129.004.91ÊPL-36Ê
+129.004.92ÊPL-38Ê
+129.004.93ÊPL-37Ê
+129.004.94ÊPL-39Ê
+129.004.95ÊPL-40Ê
+129.004.96ÊPL-41Ê
+129.004.97ÊSD-10Ê
+129.004.98ÊSD-11Ê
+129.004.99ÊTI-02Ê
+129.05.01.01.05ÊProducciÛn RAPÊ
+129.05.01.03ÊPRODUCCION DE ASFALTOÊ
+129.05.02.01.01ÊVA - DesVAte y limpiezaÊ
+129.05.02.01.02ÊVA - DesVAte y limpieza en zonas no boscosasÊ
+129.05.02.01.03ÊVA - DescapoteÊ
+129.05.02.01.04ÊVA - DemoliciÛn de estructurasÊ
+129.05.02.01.05ÊVA - RemociÛn de alcantarilladoÊ
+129.05.02.01.06ÊVA - ExcavaciÛn en material com˙n para conformaciÛn de subrasanteÊ
+129.05.02.01.07ÊVA - ExcavaciÛn en roca para conformaciÛn de subrasante con riperÊ
+129.05.02.01.08ÊVA - ExcavaciÛn en roca para conformaciÛn de subrasante con voladuraÊ
+129.05.02.01.09ÊVA - RemociÛn de DerrumbesÊ
+129.05.02.02.01ÊVA - TerraplenesÊ
+129.05.02.02.02ÊVA - Tierra armada con geotextilÊ
+129.05.02.02.03ÊVA - GavionesÊ
+129.05.02.02.04ÊVA - Pedraplen  compactadoÊ
+129.05.02.02.05ÊVA - Subbase granularÊ
+129.05.02.02.06ÊVA - Base granularÊ
+129.05.02.02.07ÊVA - Base estabilizada con cementoÊ
+129.05.02.02.08ÊVA - Base estabilizada con calÊ
+129.05.02.02.09ÊVA - AfirmadoÊ
+129.05.02.02.10ÊVA - Subrasante estabilizada con calÊ
+129.05.02.02.11ÊVA - Geotextil REPAV-450Ê
+129.05.02.03.01ÊVA - Riego de imprimaciÛn con emulsiÛn asf·lticaÊ
+129.05.02.03.02ÊVA - Mezcla densa en caliente tipo MDC-2Ê
+129.05.02.03.03ÊVA - Mezcla densa en caliente tipo MDC-2 para parcheosÊ
+129.05.02.03.04ÊVA - Mezcla densa en caliente tipo MDC-2 para renivelaciÛnÊ
+129.05.02.03.05ÊVA - Fresado de pavimentoÊ
+129.05.02.03.06ÊVA - Reciclaje de pavimentoÊ
+129.05.02.04.01ÊVA - Excavaciones variasÊ
+129.05.02.04.02ÊVA - Excavaciones varias en rocaÊ
+129.05.02.05.01ÊVA - Rellenos para estructurasÊ
+129.05.02.05.02ÊVA - Material filtranteÊ
+129.05.02.05.03ÊVA - TuberÌa Corrugada ÿ=4" para drenaje de filtrosÊ
+129.05.02.05.04ÊVA - GeotextilÊ
+129.05.02.05.05ÊVA - Limpieza de cunetas y alcantarillasÊ
+129.05.02.06.01ÊVA - Concreto reforzado tipo C ( 280 Kg/cm2)Ê
+129.05.02.06.02ÊVA - Concreto reforzado tipo D ( 210 Kg/cm2)Ê
+129.05.02.06.03ÊVA - Concreto reforzado tipo E ( 175 Kg/cm2)Ê
+129.05.02.06.04ÊVA - Concreto simple tipo F  ( 140 Kg/cm2)Ê
+129.05.02.06.05ÊVA - Concreto ciclopeo tipo G  ( 140 Kg/cm2)Ê
+129.05.02.06.06ÊVA - Concreto lanzadoÊ
+129.05.02.06.07ÊVA - Cuentas en concretoÊ
+129.05.02.06.08ÊVA - Bordillos en concretoÊ
+129.05.02.06.09ÊVA - Sellos para juntas de  P.V.C.Ê
+129.05.02.06.10ÊVA - FormaletaÊ
+129.05.02.07.01ÊVA - Acero de Refuerzo Grado 60Ê
+129.05.02.07.02ÊVA - Malla electrosoldadaÊ
+129.05.02.08.01ÊVA -  Tuberia en concreto d=0,90mÊ
+129.05.02.08.02ÊVA -  Tuberia en concreto d=1,20mÊ
+129.05.02.08.03ÊVA -  Tuberia en concreto d=1,50mÊ
+129.05.02.09.01ÊVA - Cerca de alambre de p˙as con postes de maderaÊ
+129.05.02.09.02ÊVA - Cerca de alambre de p˙as con postes de concretoÊ
+129.05.02.09.03ÊVA - Suministro e instalaciÛn de seÒal vertical SP, SR y SIÊ
+129.05.02.09.04ÊVA - LÌnea de demarcaciÛn acrÌlicaÊ
+129.05.02.09.05ÊVA - Tachas reflectivasÊ
+129.05.02.09.06ÊVA - Delineadores de curva horizontalÊ
+129.05.02.09.07ÊVA - Poste de referenciaÊ
+129.05.02.09.08ÊVA - Defensas met·licasÊ
+129.05.02.10.01ÊVA - EmpradizaciÛn con  cespedonÊ
+129.05.02.10.02ÊVA - EmpradizaciÛn con  hidrosiembraÊ
+129.05.02.10.03ÊVA - EmpradizaciÛn con  estolonesÊ
+129.05.02.10.04ÊVA - ProtecciÛn de taludes con descapoteÊ
+129.05.02.10.05ÊVA - MamposterÌa en piedra pegadaÊ
+129.05.02.11.01ÊVA - TRANSPORTE TERRAPLENÊ
+129.05.02.11.02ÊVA - TRANSPORTE DE GRANULARESÊ
+129.05.02.11.03ÊVA - TRANSPORTE DE MEZCLAÊ
+129.05.03.01.01ÊAPR - DesAPRte y limpiezaÊ
+129.05.03.01.02ÊAPR - DesAPRte y limpieza en zonas no boscosasÊ
+129.05.03.01.03ÊAPR - DescapoteÊ
+129.05.03.01.04ÊAPR - DemoliciÛn de estructurasÊ
+129.05.03.01.05ÊAPR - RemociÛn de alcantarilladoÊ
+129.05.03.01.06ÊAPR - ExcavaciÛn en material com˙n para conformaciÛn de subrasanteÊ
+129.05.03.01.07ÊAPR - ExcavaciÛn en roca para conformaciÛn de subrasante con riperÊ
+129.05.03.01.08ÊAPR - ExcavaciÛn en roca para conformaciÛn de subrasante con voladuraÊ
+129.05.03.01.09ÊAPR - RemociÛn de DerrumbesÊ
+129.05.03.02.01ÊAPR - TerraplenesÊ
+129.05.03.02.02ÊAPR - Tierra armada con geotextilÊ
+129.05.03.02.03ÊAPR - GavionesÊ
+129.05.03.02.04ÊAPR - Pedraplen  compactadoÊ
+129.05.03.02.05ÊAPR - Subbase granularÊ
+129.05.03.02.06ÊAPR - Base granularÊ
+129.05.03.02.07ÊAPR - Base estabilizada con cementoÊ
+129.05.03.02.08ÊAPR - Base estabilizada con calÊ
+129.05.03.02.09ÊAPR - AfirmadoÊ
+129.05.03.02.10ÊAPR - Subrasante estabilizada con calÊ
+129.05.03.02.11ÊAPR - Geotextil REPAV-450Ê
+129.05.03.03.01ÊAPR - Riego de imprimaciÛn con emulsiÛn asf·lticaÊ
+129.05.03.03.02ÊAPR - Mezcla densa en caliente tipo MDC-2Ê
+129.05.03.03.03ÊAPR - Mezcla densa en caliente tipo MDC-2 para parcheosÊ
+129.05.03.03.04ÊAPR - Mezcla densa en caliente tipo MDC-2 para renivelaciÛnÊ
+129.05.03.03.05ÊAPR - Fresado de pavimentoÊ
+129.05.03.03.06ÊAPR - Reciclaje de pavimentoÊ
+129.05.03.04.01ÊAPR - Excavaciones variasÊ
+129.05.03.04.02ÊAPR - Excavaciones varias en rocaÊ
+129.05.03.05.01ÊAPR - Rellenos para estructurasÊ
+129.05.03.05.02ÊAPR - Material filtranteÊ
+129.05.03.05.03ÊAPR - TuberÌa Corrugada ÿ=4" para drenaje de filtrosÊ
+129.05.03.05.04ÊAPR - GeotextilÊ
+129.05.03.05.05ÊAPR - Limpieza de cunetas y alcantarillasÊ
+129.05.03.06.01ÊAPR - Concreto reforzado tipo C ( 280 Kg/cm2)Ê
+129.05.03.06.02ÊAPR - Concreto reforzado tipo D ( 210 Kg/cm2)Ê
+129.05.03.06.03ÊAPR - Concreto reforzado tipo E ( 175 Kg/cm2)Ê
+129.05.03.06.04ÊAPR - Concreto simple tipo F  ( 140 Kg/cm2)Ê
+129.05.03.06.05ÊAPR - Concreto ciclopeo tipo G  ( 140 Kg/cm2)Ê
+129.05.03.06.06ÊAPR - Concreto lanzadoÊ
+129.05.03.06.07ÊAPR - Cuentas en concretoÊ
+129.05.03.06.08ÊAPR - Bordillos en concretoÊ
+129.05.03.06.09ÊAPR - Sellos para juntas de  P.V.C.Ê
+129.05.03.06.10ÊAPR - FormaletaÊ
+129.05.03.07.01ÊAPR - Acero de Refuerzo Grado 60Ê
+129.05.03.07.02ÊAPR - Malla electrosoldadaÊ
+129.05.03.08.01ÊAPR -  Tuberia en concreto d=0,90mÊ
+129.05.03.08.02ÊAPR -  Tuberia en concreto d=1,20mÊ
+129.05.03.08.03ÊAPR -  Tuberia en concreto d=1,50mÊ
+129.05.03.09.01ÊAPR - Cerca de alambre de p˙as con postes de maderaÊ
+129.05.03.09.02ÊAPR - Cerca de alambre de p˙as con postes de concretoÊ
+129.05.03.09.03ÊAPR - Suministro e instalaciÛn de seÒal vertical SP, SR y SIÊ
+129.05.03.09.04ÊAPR - LÌnea de demarcaciÛn acrÌlicaÊ
+129.05.03.09.05ÊAPR - Tachas reflectivasÊ
+129.05.03.09.06ÊAPR - Delineadores de curva horizontalÊ
+129.05.03.09.07ÊAPR - Poste de referenciaÊ
+129.05.03.09.08ÊAPR - Defensas met·licasÊ
+129.05.03.10.01ÊAPR - EmpradizaciÛn con  cespedonÊ
+129.05.03.10.02ÊAPR - EmpradizaciÛn con  hidrosiembraÊ
+129.05.03.10.03ÊAPR - EmpradizaciÛn con  estolonesÊ
+129.05.03.10.04ÊAPR - ProtecciÛn de taludes con descapoteÊ
+129.05.03.10.05ÊAPR - MamposterÌa en piedra pegadaÊ
+129.05.03.11.01ÊAPR - TRANSPORTE DE TERRAPLENÊ
+129.05.03.11.02ÊAPR - TRANSPORTE GRANULARÊ
+129.05.03.11.03ÊAPR - TRANSPORTE DE MEZCLAÊ
+129.05.04.01.01ÊPRM - DesPRMte y limpiezaÊ
+129.05.04.01.02ÊPRM - DesPRMte y limpieza en zonas no boscosasÊ
+129.05.04.01.03ÊPRM - DescapoteÊ
+129.05.04.01.04ÊPRM - DemoliciÛn de estructurasÊ
+129.05.04.01.05ÊPRM - RemociÛn de alcantarilladoÊ
+129.05.04.01.06ÊPRM - ExcavaciÛn en material com˙n para conformaciÛn de subrasanteÊ
+129.05.04.01.07ÊPRM - ExcavaciÛn en roca para conformaciÛn de subrasante con riperÊ
+129.05.04.01.08ÊPRM - ExcavaciÛn en roca para conformaciÛn de subrasante con voladuraÊ
+129.05.04.01.09ÊPRM - RemociÛn de DerrumbesÊ
+129.05.04.02.01ÊPRM - TerraplenesÊ
+129.05.04.02.02ÊPRM - Tierra armada con geotextilÊ
+129.05.04.02.03ÊPRM - GavionesÊ
+129.05.04.02.04ÊPRM - Pedraplen  compactadoÊ
+129.05.04.02.05ÊPRM - Subbase granularÊ
+129.05.04.02.06ÊPRM - Base granularÊ
+129.05.04.02.07ÊPRM - Base estabilizada con cementoÊ
+129.05.04.02.08ÊPRM - Base estabilizada con calÊ
+129.05.04.02.09ÊPRM - AfirmadoÊ
+129.05.04.02.10ÊPRM - Subrasante estabilizada con calÊ
+129.05.04.02.11ÊPRM - Geotextil REPAV-450Ê
+129.05.04.02.12ÊGEOMALLA TRIAXIALÊ
+129.05.04.03.01ÊPRM - Riego de imprimaciÛn con emulsiÛn asf·lticaÊ
+129.05.04.03.02ÊPRM - Mezcla densa en caliente tipo MDC-2Ê
+129.05.04.03.03ÊPRM - Mezcla densa en caliente tipo MDC-2 para parcheosÊ
+129.05.04.03.04ÊPRM - Mezcla densa en caliente tipo MDC-2 para renivelaciÛnÊ
+129.05.04.03.05ÊPRM - Fresado de pavimentoÊ
+129.05.04.03.06ÊPRM - Reciclaje de pavimentoÊ
+129.05.04.04.01ÊPRM - Excavaciones variasÊ
+129.05.04.04.02ÊPRM - Excavaciones varias en rocaÊ
+129.05.04.05.01ÊPRM - Rellenos para estructurasÊ
+129.05.04.05.02ÊPRM - Material filtranteÊ
+129.05.04.05.03ÊPRM - TuberÌa Corrugada ÿ=4" para drenaje de filtrosÊ
+129.05.04.05.04ÊPRM - GeotextilÊ
+129.05.04.05.05ÊPRM - Limpieza de cunetas y alcantarillasÊ
+129.05.04.06.01ÊPRM - Concreto reforzado tipo C ( 280 Kg/cm2)Ê
+129.05.04.06.02ÊPRM - Concreto reforzado tipo D ( 210 Kg/cm2)Ê
+129.05.04.06.03ÊPRM - Concreto reforzado tipo E ( 175 Kg/cm2)Ê
+129.05.04.06.04ÊPRM - Concreto simple tipo F  ( 140 Kg/cm2)Ê
+129.05.04.06.05ÊPRM - Concreto ciclopeo tipo G  ( 140 Kg/cm2)Ê
+129.05.04.06.06ÊPRM - Concreto lanzadoÊ
+129.05.04.06.07ÊPRM - Cuentas en concretoÊ
+129.05.04.06.08ÊPRM - Bordillos en concretoÊ
+129.05.04.06.09ÊPRM - Sellos para juntas de  P.V.C.Ê
+129.05.04.06.10ÊPRM - FormaletaÊ
+129.05.04.07.01ÊPRM - Acero de Refuerzo Grado 60Ê
+129.05.04.07.02ÊPRM - Malla electrosoldadaÊ
+129.05.04.08.01ÊPRM -  Tuberia en concreto d=0,90mÊ
+129.05.04.08.02ÊPRM -  Tuberia en concreto d=1,20mÊ
+129.05.04.08.03ÊPRM -  Tuberia en concreto d=1,50mÊ
+129.05.04.09.01ÊPRM - Cerca de alambre de p˙as con postes de maderaÊ
+129.05.04.09.02ÊPRM - Cerca de alambre de p˙as con postes de concretoÊ
+129.05.04.09.03ÊPRM - Suministro e instalaciÛn de seÒal vertical SP, SR y SIÊ
+129.05.04.09.04ÊPRM - LÌnea de demarcaciÛn acrÌlicaÊ
+129.05.04.09.05ÊPRM - Tachas reflectivasÊ
+129.05.04.09.06ÊPRM - Delineadores de curva horizontalÊ
+129.05.04.09.07ÊPRM - Poste de referenciaÊ
+129.05.04.09.08ÊPRM - Defensas met·licasÊ
+129.05.04.10.01ÊPRM - EmpradizaciÛn con  cespedonÊ
+129.05.04.10.02ÊPRM - EmpradizaciÛn con  hidrosiembraÊ
+129.05.04.10.03ÊPRM - EmpradizaciÛn con  estolonesÊ
+129.05.04.10.04ÊPRM - ProtecciÛn de taludes con descapoteÊ
+129.05.04.10.05ÊPRM - MamposterÌa en piedra pegadaÊ
+129.05.04.11.01ÊPRM - TRANSPORTE DE TERRAPLENÊ
+129.05.04.11.02ÊPRM - TRANSPORTE DE GRANULARESÊ
+129.05.04.11.03ÊPRM - TRANSPORTE DE MEZCLAÊ
+129.05.04.11.04ÊPRM- PEAJES Puerto Rey  MonteriaÊ
+129.05.05.01.01ÊSLS - DesSLSte y limpiezaÊ
+129.05.05.01.02ÊSLS - DesSLSte y limpieza en zonas no boscosasÊ
+129.05.05.01.03ÊSLS - DescapoteÊ
+129.05.05.01.04ÊSLS - DemoliciÛn de estructurasÊ
+129.05.05.01.05ÊSLS - RemociÛn de alcantarilladoÊ
+129.05.05.01.06ÊSLS - ExcavaciÛn en material com˙n para conformaciÛn de subrasanteÊ
+129.05.05.01.07ÊSLS - ExcavaciÛn en roca para conformaciÛn de subrasante con riperÊ
+129.05.05.01.08ÊSLS - ExcavaciÛn en roca para conformaciÛn de subrasante con voladuraÊ
+129.05.05.01.09ÊSLS - RemociÛn de DerrumbesÊ
+129.05.05.02.01ÊSLS - TerraplenesÊ
+129.05.05.02.02ÊSLS - Tierra armada con geotextilÊ
+129.05.05.02.03ÊSLS - GavionesÊ
+129.05.05.02.04ÊSLS - Pedraplen  compactadoÊ
+129.05.05.02.05ÊSLS - Subbase granularÊ
+129.05.05.02.06ÊSLS - Base granularÊ
+129.05.05.02.07ÊSLS - Base estabilizada con cementoÊ
+129.05.05.02.08ÊSLS - Base estabilizada con calÊ
+129.05.05.02.09ÊSLS - AfirmadoÊ
+129.05.05.02.10ÊSLS - Subrasante estabilizada con calÊ
+129.05.05.02.11ÊSLS - Geotextil REPAV-450Ê
+129.05.05.03.01ÊSLS - Riego de imprimaciÛn con emulsiÛn asf·lticaÊ
+129.05.05.03.02ÊSLS - Mezcla densa en caliente tipo MDC-2Ê
+129.05.05.03.03ÊSLS - Mezcla densa en caliente tipo MDC-2 para parcheosÊ
+129.05.05.03.04ÊSLS - Mezcla densa en caliente tipo MDC-2 para renivelaciÛnÊ
+129.05.05.03.05ÊSLS - Fresado de pavimentoÊ
+129.05.05.03.06ÊSLS - Reciclaje de pavimentoÊ
+129.05.05.04.01ÊSLS - Excavaciones variasÊ
+129.05.05.04.02ÊSLS - Excavaciones varias en rocaÊ
+129.05.05.05.01ÊSLS - Rellenos para estructurasÊ
+129.05.05.05.02ÊSLS - Material filtranteÊ
+129.05.05.05.03ÊSLS - TuberÌa Corrugada ÿ=4" para drenaje de filtrosÊ
+129.05.05.05.04ÊSLS - GeotextilÊ
+129.05.05.05.05ÊSLS - Limpieza de cunetas y alcantarillasÊ
+129.05.05.06.01ÊSLS - Concreto reforzado tipo C ( 280 Kg/cm2)Ê
+129.05.05.06.02ÊSLS - Concreto reforzado tipo D ( 210 Kg/cm2)Ê
+129.05.05.06.03ÊSLS - Concreto reforzado tipo E ( 175 Kg/cm2)Ê
+129.05.05.06.04ÊSLS - Concreto simple tipo F  ( 140 Kg/cm2)Ê
+129.05.05.06.05ÊSLS - Concreto ciclopeo tipo G  ( 140 Kg/cm2)Ê
+129.05.05.06.06ÊSLS - Concreto lanzadoÊ
+129.05.05.06.07ÊSLS - Cuentas en concretoÊ
+129.05.05.06.08ÊSLS - Bordillos en concretoÊ
+129.05.05.06.09ÊSLS - Sellos para juntas de  P.V.C.Ê
+129.05.05.06.10ÊSLS - FormaletaÊ
+129.05.05.07.01ÊSLS - Acero de Refuerzo Grado 60Ê
+129.05.05.07.02ÊSLS - Malla electrosoldadaÊ
+129.05.05.08.01ÊSLS -  Tuberia en concreto d=0,90mÊ
+129.05.05.08.02ÊSLS -  Tuberia en concreto d=1,20mÊ
+129.05.05.08.03ÊSLS -  Tuberia en concreto d=1,50mÊ
+129.05.05.09.01ÊSLS - Cerca de alambre de p˙as con postes de maderaÊ
+129.05.05.09.02ÊSLS - Cerca de alambre de p˙as con postes de concretoÊ
+129.05.05.09.03ÊSLS - Suministro e instalaciÛn de seÒal vertical SP, SR y SIÊ
+129.05.05.09.04ÊSLS - LÌnea de demarcaciÛn acrÌlicaÊ
+129.05.05.09.05ÊSLS - Tachas reflectivasÊ
+129.05.05.09.06ÊSLS - Delineadores de curva horizontalÊ
+129.05.05.09.07ÊSLS - Poste de referenciaÊ
+129.05.05.09.08ÊSLS - Defensas met·licasÊ
+129.05.05.10.01ÊSLS - EmpradizaciÛn con  cespedonÊ
+129.05.05.10.02ÊSLS - EmpradizaciÛn con  hidrosiembraÊ
+129.05.05.10.03ÊSLS - EmpradizaciÛn con  estolonesÊ
+129.05.05.10.04ÊSLS - ProtecciÛn de taludes con descapoteÊ
+129.05.05.10.05ÊSLS - MamposterÌa en piedra pegadaÊ
+129.05.05.11.01ÊSLS - TRANSPORTE DE TERRAPLENÊ
+129.05.05.11.02ÊSLS - TRANSPORTE DE GRANULARESÊ
+129.05.05.11.03ÊSLS - TRANSPORTE DE MEZCLAÊ
+129.05.06.01.01ÊPLMO - DesPLMOte y limpiezaÊ
+129.05.06.01.02ÊPLMO - DesPLMOte y limpieza en zonas no boscosasÊ
+129.05.06.01.03ÊPLMO - DescapoteÊ
+129.05.06.01.04ÊPLMO - DemoliciÛn de estructurasÊ
+129.05.06.01.05ÊPLMO - RemociÛn de alcantarilladoÊ
+129.05.06.01.06ÊPLMO - ExcaVAciÛn en material com˙n para conformaciÛn de subrasanteÊ
+129.05.06.01.07ÊPLMO - ExcaVAciÛn en roca para conformaciÛn de subrasante con riperÊ
+129.05.06.01.08ÊPLMO - ExcaVAciÛn en roca para conformaciÛn de subrasante con voladuraÊ
+129.05.06.01.09ÊPLMO - RemociÛn de DerrumbesÊ
+129.05.06.02.01ÊPLMO - TerraplenesÊ
+129.05.06.02.02ÊPLMO - Tierra armada con geotextilÊ
+129.05.06.02.03ÊPLMO - GavionesÊ
+129.05.06.02.04ÊPLMO - Pedraplen  compactadoÊ
+129.05.06.02.05ÊPLMO - Subbase granularÊ
+129.05.06.02.06ÊPLMO - Base granularÊ
+129.05.06.02.07ÊPLMO - Base estabilizada con cementoÊ
+129.05.06.02.08ÊPLMO - Base estabilizada con calÊ
+129.05.06.02.09ÊPLMO - AfirmadoÊ
+129.05.06.02.10ÊPLMO - Subrasante estabilizada con calÊ
+129.05.06.02.11ÊPLMO - Geotextil REPAV-450Ê
+129.05.06.03.01ÊPLMO - Riego de imprimaciÛn con emulsiÛn asf·lticaÊ
+129.05.06.03.02ÊPLMO - Mezcla densa en caliente tipo MDC-2Ê
+129.05.06.03.03ÊPLMO - Mezcla densa en caliente tipo MDC-2 para parcheosÊ
+129.05.06.03.04ÊPLMO - Mezcla densa en caliente tipo MDC-2 para renivelaciÛnÊ
+129.05.06.03.05ÊPLMO - Fresado de pavimentoÊ
+129.05.06.03.06ÊPLMO - Reciclaje de pavimentoÊ
+129.05.06.04.01ÊPLMO - ExcaVAciones VAriasÊ
+129.05.06.04.02ÊPLMO - ExcaVAciones VArias en rocaÊ
+129.05.06.05.01ÊPLMO - Rellenos para estructurasÊ
+129.05.06.05.02ÊPLMO - Material filtranteÊ
+129.05.06.05.03ÊPLMO - TuberÌa Corrugada ÿ=4" para drenaje de filtrosÊ
+129.05.06.05.04ÊPLMO - GeotextilÊ
+129.05.06.05.05ÊPLMO - Limpieza de cunetas y alcantarillasÊ
+129.05.06.06.01ÊPLMO - Concreto reforzado tipo C ( 280 Kg/cm2)Ê
+129.05.06.06.02ÊPLMO - Concreto reforzado tipo D ( 210 Kg/cm2)Ê
+129.05.06.06.03ÊPLMO - Concreto reforzado tipo E ( 175 Kg/cm2)Ê
+129.05.06.06.04ÊPLMO - Concreto simple tipo F  ( 140 Kg/cm2)Ê
+129.05.06.06.05ÊPLMO - Concreto ciclopeo tipo G  ( 140 Kg/cm2)Ê
+129.05.06.06.06ÊPLMO - Concreto lanzadoÊ
+129.05.06.06.07ÊPLMO - Cuentas en concretoÊ
+129.05.06.06.08ÊPLMO - Bordillos en concretoÊ
+129.05.06.06.09ÊPLMO - Sellos para juntas de  P.V.C.Ê
+129.05.06.06.10ÊPLMO - FormaletaÊ
+129.05.06.07.01ÊPLMO - Acero de Refuerzo Grado 60Ê
+129.05.06.07.02ÊPLMO - Malla electrosoldadaÊ
+129.05.06.08.01ÊPLMO -  Tuberia en concreto d=0,90mÊ
+129.05.06.08.02ÊPLMO -  Tuberia en concreto d=1,20mÊ
+129.05.06.08.03ÊPLMO -  Tuberia en concreto d=1,50mÊ
+129.05.06.09.01ÊPLMO - Cerca de alambre de p˙as con postes de maderaÊ
+129.05.06.09.02ÊPLMO - Cerca de alambre de p˙as con postes de concretoÊ
+129.05.06.09.03ÊPLMO - Suministro e instalaciÛn de seÒal vertical SP, SR y SIÊ
+129.05.06.09.04ÊPLMO - LÌnea de demarcaciÛn acrÌlicaÊ
+129.05.06.09.05ÊPLMO - Tachas reflectiPLMOsÊ
+129.05.06.09.06ÊPLMO - Delineadores de curPLMO horizontalÊ
+129.05.06.09.07ÊPLMO - Poste de referenciaÊ
+129.05.06.09.08ÊPLMO - Defensas met·licasÊ
+129.05.06.10.01ÊPLMO - EmpradizaciÛn con  cespedonÊ
+129.05.06.10.02ÊPLMO - EmpradizaciÛn con  hidrosiembraÊ
+129.05.06.10.03ÊPLMO - EmpradizaciÛn con  estolonesÊ
+129.05.06.10.04ÊPLMO - ProtecciÛn de taludes con descapoteÊ
+129.05.06.10.05ÊPLMO - MamposterÌa en piedra pegadaÊ
+129.05.06.11.01ÊPLMO - TRANSPORTE TERRAPLENÊ
+129.05.06.11.02ÊPLMO - TRANSPORTE DE GRANULARESÊ
+129.05.06.11.03ÊPLMO - TRANSPORTE DE MEZCLAÊ
+129.05.06.11.04ÊPLMO- PEAJES PLANETA RICA MONTERÕAÊ
+129.05.06.12.01ÊAcondionamiento del area y manejo de aguasÊ
+129.05.06.12.02ÊConcreto Clase D - f'c = 21.0 Mpa ciclopeoÊ
+129.05.06.12.03ÊSuministro e inst. de lagrimalesÊ
+129.05.06.12.04ÊDemolicion Carpeta AsfalticaÊ
+129.05.06.12.05ÊDemolicion concretoÊ
+129.05.06.12.06ÊAnclaje de refuerzo (profundidad 20 cm)Ê
+129.05.06.12.07ÊConcreto de ReposicionÊ
+129.05.06.12.08ÊPuente de AdherenciaÊ
+129.05.06.12.09ÊBaranda Met·licaÊ
+129.05.06.12.10ÊConstruccion obra falsaÊ
+129.05.06.12.11ÊAnclaje tipo fyfeÊ
+129.05.06.12.12ÊInyeccion de fisurasÊ
+129.05.06.12.13ÊMBRACE LAMINATE 100/1.4Ê
+129.05.06.12.14ÊMBRACE CF130-SIMPLEÊ
+129.05.06.12.15ÊMBRACE CF160-SIMPLEÊ
+129.05.06.12.16ÊMBRACE CF160-DOBLEÊ
+129.05.06.12.17ÊMBRACE CF160-3CAPASÊ
+129.05.06.12.18ÊMBRACE CF160-4CAPASÊ
+129.05.06.12.19ÊSuministro e instalacion de neopreno 150x200x32 dureza 60Ê
+129.05.06.12.20ÊHidrolavado, aplicaciÛn de recubrimiento epÛxico y tratamiento de fisuras  y desprendimientosÊ
+129.05.06.12.21ÊLimpieza de estructura con hidrolavado a presiÛn.Ê
+129.05.06.12.22ÊEscarificaciÛn de secciones de concreto afectadasÊ
+129.05.06.12.23ÊSuministro y aplicaciÛn de pintura acrÌlica el·sticaÊ
+129.05.06.12.24ÊRestituciÛn de secciones de concreto afectadas, con morteroÊ
+129.05.06.12.25ÊPintura de barandas met·licas, con sistema de protecciÛn tricapa aplicaciÛn de pinturaÊ
+129.05.07.01.01ÊSA - MEJORAMIENTOÊ
+129.05.07.01.02ÊSA- REMOCI”N DE DERRUMBESÊ
+129.05.07.01.03ÊSJA - Desmonte y limpiezaÊ
+129.05.07.01.04ÊSJA - Desmonte y limpieza en zonas no boscosasÊ
+129.05.07.01.05ÊSJA - DescapoteÊ
+129.05.07.01.06ÊSJA - DemoliciÛn de estructurasÊ
+129.05.07.01.07ÊSJA - RemociÛn de alcantarilladoÊ
+129.05.07.01.08ÊSJA - ExcavaciÛn en material com˙nÊ
+129.05.07.01.09ÊSJA - ExcavaciÛn en roca para conformaciÛn de subrasante con riperÊ
+129.05.07.01.10ÊSJA - ExcavaciÛn en roca para conformaciÛn de subrasante con voladuraÊ
+129.05.07.01.11ÊSJA - RemociÛn de DerrumbesÊ
+129.05.07.02.01ÊSJA - TerraplenesÊ
+129.05.07.02.02ÊSJA - Tierra armada con geotextilÊ
+129.05.07.02.03ÊSJA - GavionesÊ
+129.05.07.02.04ÊSJA - Pedraplen  compactadoÊ
+129.05.07.02.05ÊSJA - Subbase granularÊ
+129.05.07.02.06ÊSJA - Base granularÊ
+129.05.07.02.07ÊSJA - Pedraplen  compactadoÊ
+129.05.07.02.08ÊSJA - Base estabilizada con calÊ
+129.05.07.02.09ÊSJA - AfirmadoÊ
+129.05.07.02.10ÊSJA - Subrasante estabilizada con calÊ
+129.05.07.02.11ÊSJA - Geotextil REPAV-450Ê
+129.05.07.02.12ÊSJA - Gemalla triaxialÊ
+129.05.07.03.01ÊSJA - Riego de imprimaciÛn con emulsiÛn asf·lticaÊ
+129.05.07.03.02ÊSJA - Mezcla densa en caliente tipo MDC-2Ê
+129.05.07.03.03ÊSJA - Mezcla densa en caliente tipo MDC-2 para parcheosÊ
+129.05.07.03.05ÊSJA - Fresado de pavimentoÊ
+129.05.07.03.06ÊSJA - Reciclaje de pavimentoÊ
+129.05.07.03.07ÊSJA - Mezcla densa en caliente tipo MDC-2 para renivelaciÛnÊ
+129.05.07.04.01ÊSJA - Excavaciones variasÊ
+129.05.07.04.02ÊSJA - Excavaciones varias en rocaÊ
+129.05.07.05.01ÊSJA - Rellenos para estructurasÊ
+129.05.07.05.02ÊSJA - Material filtranteÊ
+129.05.07.05.03ÊSJA - TuberÌa Corrugada ÿ=4" para drenaje de filtrosÊ
+129.05.07.05.05ÊSJA - Limpieza de cunetas y alcantarillasÊ
+129.05.07.05.07ÊSJA - GeotextilÊ
+129.05.07.06.01ÊSJA - Concreto reforzado tipo C ( 280 Kg/cm2)Ê
+129.05.07.06.02ÊSJA - Concreto reforzado tipo D ( 210 Kg/cm2)Ê
+129.05.07.06.03ÊSJA - Concreto reforzado tipo E ( 175 Kg/cm2)Ê
+129.05.07.06.04ÊSJA - Concreto simple tipo F  ( 140 Kg/cm2)Ê
+129.05.07.06.05ÊSJA - Concreto ciclopeo tipo G  ( 140 Kg/cm2)Ê
+129.05.07.06.06ÊSJA - Concreto lanzadoÊ
+129.05.07.06.07ÊSJA - Concreto simple tipo F  ( 140 Kg/cm2)Ê
+129.05.07.06.08ÊSJA - Bordillos en concretoÊ
+129.05.07.06.09ÊSJA - Sellos para juntas de  P.V.C.Ê
+129.05.07.06.10ÊSJA - FormaletaÊ
+129.05.07.07.01ÊSJA - Acero de Refuerzo Grado 60Ê
+129.05.07.07.02ÊSJA - Malla electrosoldadaÊ
+129.05.07.07.03ÊSJA - Estructura MetalicaÊ
+129.05.07.08.01ÊSJA -  Tuberia en concreto d=0,90mÊ
+129.05.07.08.02ÊSJA -  Tuberia en concreto d=1,20mÊ
+129.05.07.08.03ÊSJA -  Tuberia en concreto d=1,50mÊ
+129.05.07.09.01ÊSJA - Cerca de alambre de p˙as con postes de maderaÊ
+129.05.07.09.02ÊSJA - Cerca de alambre de p˙as con postes de concretoÊ
+129.05.07.09.03ÊSJA - Suministro e instalaciÛn de seÒal vertical SP, SR y SIÊ
+129.05.07.09.04ÊSJA - LÌnea de demarcaciÛn acrÌlicaÊ
+129.05.07.09.05ÊSJA - Tachas reflectivasÊ
+129.05.07.09.06ÊSJA - Delineadores de curva horizontalÊ
+129.05.07.09.07ÊSJA - LÌnea de demarcaciÛn acrÌlicaÊ
+129.05.07.09.08ÊSJA - Defensas met·licasÊ
+129.05.07.10.01ÊSJA - EmpradizaciÛn con  cespedonÊ
+129.05.07.10.02ÊSJA - EmpradizaciÛn con  hidrosiembraÊ
+129.05.07.10.03ÊSJA - EmpradizaciÛn con  estolonesÊ
+129.05.07.10.05ÊSJA - MamposterÌa en piedra pegadaÊ
+129.05.07.10.07ÊSJA - ProtecciÛn de taludes con descapoteÊ
+129.05.07.11.01ÊSJA - Trasnporte terraplenÊ
+129.05.07.11.02ÊSJA - Trasnporte GranularesÊ
+129.05.07.11.03ÊSJA - Trasnporte MezclaÊ
+129.05.07.11.04ÊSJA - peajesÊ
+129.05.08.01.01ÊLocalizaciÛn y replanteoÊ
+129.05.08.01.02ÊCampamentosÊ
+129.05.08.01.03ÊCerramiento polisombraÊ
+129.05.08.02.01ÊExcavaciÛn en material com˙n, ExplanaciÛn del terreno.       ( Esp. 0.80 m)Ê
+129.05.08.02.02ÊLleno con material seleccionado. ( Esp. 0.20 m)Ê
+129.05.08.03.01ÊExcavaciones varias Zapatas, vigas y tanque de almacenamiento.Ê
+129.05.08.03.02ÊConcreto Clase D para zapatas y vigas de cimentaciÛn.Ê
+129.05.08.03.03ÊConcreto Clase D para vigas y columnasÊ
+129.05.08.03.04ÊPlaca aligerada h = 0.45Ê
+129.05.08.03.05ÊPlaca maciza h = 0.10Ê
+129.05.08.03.06ÊAcero de refuerzo PDR 37Ê
+129.05.08.03.07ÊAcero de refuerzo PDR 60Ê
+129.05.08.03.08ÊPlaca de contrapisoÊ
+129.05.08.03.09ÊMalla electrosoldadaÊ
+129.05.08.03.10ÊEscalera en concretoÊ
+129.05.08.04.01ÊLevante en bloque ( 9 x 19 x 39)Ê
+129.05.08.04.02ÊPaÒete interno pulidoÊ
+129.05.08.04.03ÊPaÒete externo impermeabilizadoÊ
+129.05.08.05.01ÊPiso oficinas (Cer·mica 0.40 x 0.40 trafico 5)Ê
+129.05.08.05.02ÊGuarda escoba (Cer·mica)Ê
+129.05.08.05.03ÊPiso acceso andenes perimetrales ( TablÛn 0.30 x 0.30)Ê
+129.05.08.05.04ÊPiso baÒos y cuarto de aseo (Cer·mica 0.20 x 0.20)Ê
+129.05.08.05.05ÊEnchape baÒos y cuarto de aseo (Cer·mica 0.20 x 0.20)Ê
+129.05.08.05.06ÊAlistado pisosÊ
+129.05.08.06.01ÊPuertas en AluminioÊ
+129.05.08.06.02ÊVentanas en AluminioÊ
+129.05.08.07.01ÊTuberÌas SanitariasÊ
+129.05.08.07.02ÊAparatos SanitariosÊ
+129.05.08.07.03ÊTanque de Almacenamiento de AguaÊ
+129.05.08.07.04ÊInstalaciones elÈctricas internas y externas ( S. Planos)Ê
+129.05.08.09.01ÊPintura interiorÊ
+129.05.08.09.02ÊPintura exterior - intemperieÊ
+129.05.08.09.03ÊEstucoÊ
+129.05.08.10.01ÊCubierta C.C.O. (S. planos )Ê
+129.05.08.10.02ÊCubierta parqueadero (S. Planos)Ê
+129.05.08.11.01ÊAnden perimetral 1 x 0.10Ê
+129.05.08.11.02ÊBordillo reforzado  interno ( 0.40 x 0.20)Ê
+129.05.08.11.03ÊBordillo reforzado externo ( 0.60 x 0.20)Ê
+129.05.08.11.04ÊSub base granular e=0.4Ê
+129.05.08.11.05ÊBase granular e=0.25Ê
+129.05.08.11.06ÊPavimento MDC - 2 e=0.1Ê
+129.05.08.11.07ÊTransportes granularesÊ
+129.05.08.11.08ÊTransportes mezclaÊ
+129.05.08.11.09ÊConcreto carcamo 0.5*0.5 (incluye aletas)Ê
+129.05.08.11.10ÊAcero refuerzo carcamo (incluye aletas)Ê
+129.05.08.11.11ÊMuro en malla metalicaÊ
+129.05.08.12.01ÊTanque sÈptico Capacidad 40 personas (CCO y admon peaje) sistema tratamiento compactoÊ
+129.05.08.12.02ÊTrampa de grasas.Ê
+129.05.08.12.03ÊZona de infiltraciÛn.Ê
+129.05.09.01.01ÊESTUDIOS Y DISE—OSÊ
+129.05.10ÊCONSUMOS INVENTARIO MONTERIAÊ
+129.06.01ÊMon - Gastos de personal operativoÊ
+129.06.02ÊMon - Gastos de personal administrativoÊ
+129.06.03ÊMon - HonorariosÊ
+129.06.04ÊMon - ArrendamientosÊ
+129.06.05ÊMon - ServiciosÊ
+129.06.06ÊMon - Servicios de vigilanciaÊ
+129.06.07ÊMon - DiversosÊ
+129.06.08ÊMon - Casinos y restaurantesÊ
+129.06.09ÊMon - Peajes y parqueaderosÊ
+129.06.10ÊMon - Sostenimiento de VehÌculos administrativosÊ
+129.06.11ÊMon - AdecuaciÛn e instalaciÛn de CampamentosÊ
+129.06.12ÊMon - PublicaciÛn gaceta oficialÊ
+129.06.13ÊMon - Impuesto de TimbreÊ
+129.06.14ÊMon - Impuesto de guerraÊ
+129.06.15ÊMon - Impuesto de industria y comercioÊ
+129.06.16ÊMon - EstampillaÊ
+129.06.17ÊMon - Alojamiento y manutencionÊ
+129.06.18ÊMon - Pasajes Aereos y terrestresÊ
+129.06.19ÊMon - GarantÌas y segurosÊ
+129.06.20ÊMon - Gastos financierosÊ
+129.06.21ÊMon - Montaje, desmontaje y traslado de plantasÊ
+129.06.22ÊMon - Transporte, fletes y acarreosÊ
+129.06.23ÊMon - GestiÛn ambientalÊ
+129.06.24.01ÊMon - Elementos de protecciÛn personalÊ
+129.06.24.02ÊMon - Herramientas de protecciÛn personalÊ
+129.06.24.03ÊMon - Elementos de protecciÛn de obraÊ
+129.06.24.04ÊMon - SeÒalizaciÛnÊ
+129.06.24.05ÊMon - BotiquÌnÊ
+129.06.24.06ÊMon - DotaciÛn legalÊ
+129.06.24.07ÊMon - Medicina preventivaÊ
+129.06.24.08ÊMon - Suministro de aguaÊ
+129.06.25ÊMon - Casa matrizÊ
+129.06.26ÊMon - Elementos de laboratorio y topografÌaÊ
+129.06.27ÊMon - GestiÛn socialÊ
+129.06.28ÊFACTURA DE MAQUINARIA MONTERIAÊ
+129.07.01.01ÊALQUILER DE BUS PARA TRANSPORTE DE PERSONAL.Ê
+129.07.02.01ÊCARROTANQUE PLACAS VKE-552Ê
+129.07.02.02ÊCARROTANQUE DE AGUA CON PLACA XKD-559Ê
+129.07.03.01ÊVALORCON PUENTESÊ
+129.07.04.01ÊSUMINISTROS URAB¡Ê
+129.07.05.01ÊTRANSPORTAR MATERIALES DENTRO DE LA OBRA EN UNA NPRÊ
+129.07.06.01ÊTRANSPORTE DE AGUA - CARROTANQUE DE AGUA - PLACAS TPL-449Ê
+129.07.06.02ÊTRANSPORTE DE COMBUSTIBLE - CARROTANQUE DE COMBUSTIBLE- PLACAS THK-315Ê
+129.07.06.03ÊTRANSPORTE DE AGUA- CARROTANQUE - PLACAS TZY700Ê
+129.07.06.04ÊTRANSPORTE DE AGUA- CARROTANQUE - PLACAS TFV-344Ê
+129.07.06.05ÊTRANSPORTE DE AGUA - CARROTANQUE PLACAS STY 120Ê
+129.07.07.01ÊTRANSPORTE DE  MATERIALESÊ
+129.07.08.01ÊALQUILER DE CAMIONETA - PLACAS FHA-861Ê
+129.07.09.01ÊALQUILER DE CARROTANQUE - PLACAS UIB-470Ê
+129.07.10.01ÊTRANSPORTE DE PERSONAL - BUS SFU-234Ê
+129.07.10.02ÊTRANSPORTE DE PERSONAL - BUS TKD-050Ê
+129.07.10.03ÊTRANSPORTE DE PERSONAL - BUS XGA-204Ê
+129.07.10.04ÊTRANSPORTE DE PERSONAL - BUS UAH-046Ê
+129.07.10.05ÊTRANSPORTE DE PERSONAL - BUS SUC-182Ê
+129.07.10.06ÊTRANSPORTE DE PERSONAL - BUS TIG -176Ê
+129.07.11.01ÊTRANSPORTE DE ACPM- CARROTANQUE  PLACAS HLI-174Ê
+129.07.11.02ÊTRANSPORTE DE AGUA - CARROTANQUE  PLACAS  SYK 622Ê
+129.07.12.01ÊTRANSPORTE DE MATERIALES - NQR PLACAS YHK-743Ê
+129.07.13.01ÊALQUILER DE BUSETA - PLACAS SNL-150Ê
+129.07.14.01ÊTRANSPORTE DE AGUA - CARROTANQUE DE AGUA PLACAS TAF-473Ê
+129.07.15.01ÊTRANSPORTE DE AGUA - CARROTANQUE CON PLACAS IYA-485Ê
+129.07.16.01ÊCARGUE DE MATERIAL EN CANTERA - EXCAVADORA CATERPILLAR SERIE 7DK01181Ê
+129.07.17.01ÊALQUILER DE VANS - TRANSPORTE DE EMPLEADOS - PLACAS  SQL 419Ê
+129.07.18.01ÊSuministros San Marcos MajagualÊ
+129.07.19.01ÊTRANSPORTE DE PERSONAL- BUS PLACAS SUC447Ê
+129.07.19.02ÊTRANSPORTE DE PERSONAL- BUS PLACAS WXA-159Ê
+129.07.19.03ÊTRANSPORTE DE PERSONAL- BUS PLACAS XGA-266Ê
+129.07.19.04ÊTRANSPORTE DE PERSONAL- BUS PLACAS SUC-182Ê
+129.07.19.05ÊTRANSPORTE DE PERSONAL - PLACAS TMW 343Ê
+129.07.20.01ÊTRANSPORTE DE PERSONAL- BUS PLACAS TIG-176Ê
+129.07.21.01ÊTRANSPORTE DE MATERIALESÊ
+129.07.22.01ÊREFORZAMIENTO DE PUENTESÊ
+129.07.23.01ÊTransporte Mario Huertas	Ê
+129.07.24.01ÊSUMINISTROS DABEIBAÊ
+129.07.25.01ÊVENTAS TERCEROSÊ
+129.07.26.01ÊTRANSPORTE DE MATERIALÊ
+129.08.01ÊPRODUCCION DE MATERIALES PETREOSÊ
+129.08.02ÊEXPLOTACI”N DE MATERIALESÊ
+129.08.03ÊFABRICACION DE TUBERÕAÊ
+129.08.04ÊPRODUCCI”N DE MEZCLA ASF¡LTICAÊ
+129.08.05ÊPRODUCCI”N DE BASEÊ
+129.08.06ÊPRODUCCI”N DE SUBBASEÊ
+129.08.07ÊEXPLOTACI”N DE ARENA NATURALÊ
+129.08.08ÊMONTAJE E INSTALACIONES PRELIMINARES MONTERIAÊ
+129.08.09ÊPRODUCCI”N DE CONCRETO EN DOSIFICADORAÊ
+129.08.10ÊPROCESO DE FRESADOÊ
+129.08.11ÊEXPLOTACION LOS MARTINEZÊ
+129.08.12ÊEXPLOTACION SIBERIAÊ
+129.08.13ÊPRODUCCI”N DE EMULSI”NÊ
+129.09.01.01ÊHITO 5-15Ê
+129.09.01.02ÊHITO 15-30Ê
+129.09.01.03ÊHITO 30-40Ê
+129.09.01.04ÊHITO 40-50Ê
+129.09.01.05ÊHITO 50-60Ê
+129.09.01.06ÊHITO 60-64Ê
+129.09.01.07ÊHITOS RESTANTESÊ
+129.09.02.01ÊHITO 24-34Ê
+129.09.02.02ÊHITO 34- 39Ê
+129.09.02.03ÊHITO 39-49Ê
+129.09.02.04ÊHITO 0-12Ê
+129.09.02.05ÊHITO 12-24Ê
+129.09.02.06ÊHITOS RESTANTESÊ
+129.09.03.01ÊHITO 1. 62- 72Ê
+129.09.03.02ÊHITO 2. 72 - 77.8Ê
+129.09.04.01ÊHITO 1. 0-5Ê
+129.09.04.02ÊHITO 2. 5-15Ê
+129.09.04.03ÊHITO 2. 15-25.4Ê

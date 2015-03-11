@@ -1,0 +1,1 @@
+SELECT codigo, descripcion FROM conceptos_distribucion WHERE codigo like '%%' And hoja =1 AND left(codigo, len(129)) = '129'ORDER BY codigo
