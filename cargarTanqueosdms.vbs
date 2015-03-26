@@ -133,6 +133,7 @@ Sub CopiarCVS2SQL(Archivo, tabla, Strcnn)
 	Set rs=CreateObject("ADODB.recordset")
 	Set cm=CreateObject("ADODB.command")	
 	cnn.Open Strcnn
+	cnn.CommandTimeout=180
 	'Por el momento en prueba borra todo, pero debe dejar los que se han metido pero no se han enviado a dms
     
 	rs.Open tabla, cnn, adOpenKeyset, adLockOptimistic, adCmdTableDirect

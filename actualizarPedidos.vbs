@@ -20,6 +20,7 @@ conexion= "Provider=SQLNCLI11;" _
 
 Set cnn=CreateObject("ADODB.Connection")
 	cnn.Open conexion
+	cnn.CommandTimeout=180
     Archivo="D:\datos\csv\pedidos.sql.csv"
 	Set fso= CreateObject("Scripting.FileSystemObject")
 	If Not fso.FileExists(Archivo) Then 

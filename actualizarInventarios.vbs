@@ -20,6 +20,7 @@ conexion= "Provider=SQLNCLI11;" _
 
 Set cnn=CreateObject("ADODB.Connection")
 	cnn.Open conexion
+	cnn.CommandTimeout=180
 	'Archivo="D:\datos\csv\inventario2.sql.csv"
     Archivo="D:\datos\csv\inventario" & (Year(Now)*100+Month(Now)) & ".sql.csv"
 	Set fso= CreateObject("Scripting.FileSystemObject")
