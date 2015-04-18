@@ -13,21 +13,28 @@ Se baja [virtualbox](https://www.virtualbox.org/wiki/Downloads), mejor la opció
 
 Se baja [Ubuntu Server 64 bits](http://releases.ubuntu.com/14.04/ubuntu-14.04.2-server-amd64.iso).
 
+##Instalación de ubuntu server 14.04 en virtualbox.
+
 En la instalación se sigue el procedimiento de la pagina de [Forat](http://www.forat.info/2008/08/servidor-en-linux-ubuntu-server-manual-completo/) 
 
-1-Se instala ubuntu server con ssh lamp samba cut print
-2-Se ajusta la red con adaptador puente, la tarjeta de red que se usa
+1-Se instala ubuntu server con ssh lamp samba cut print.
+
+2-Se ajusta la red con adaptador puente, la tarjeta de red que se usa.
+
 3-Se cambia /etc/network/interfaces
 
-auto eth0
-iface eth0 inet static
+	auto eth0
+	iface eth0 inet static
 
-address 192.168.1.145
-netmask 255.255.255.0
-gateway 192.168.1.1
-nameserver 208.67.222.222 208.67.220.220
+	address 192.168.5.145
+	netmask 255.255.255.0
+	gateway 192.168.5.1
+	nameserver 208.67.222.222 208.67.220.220
 
-4-Se configura LAMP
+Estas direcciones son especificas para el servidor en una red especifica (192.168.5.xxx)
+
+4-Se configura **LAMP** (Linux-Apache-Mysql-Php,Python,Perl)
+
 4.1- Se verifica que este funcionando el servidor apache:
  
  En explorador se escribe la direccion del servidor: http://192.168.1.145/
