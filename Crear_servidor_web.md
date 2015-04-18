@@ -35,6 +35,44 @@ Estas direcciones son especificas para el servidor en una red especifica (192.16
 
 4-Se configura **LAMP** (Linux-Apache-Mysql-Php,Python,Perl)
 
+4.1 - Configurar apache2.
+
+En la versión 14.04 en mas complicado, los cambios hay que hacerlos en varios archivos
+
+4.1.1 Copia el archivo de configuación del directorio raiz al nuevo sitio
+
+	sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/minuevositio.conf
+
+4.1.2 En el nuevo sitio cambia el archivo raiz asi:
+
+	sudo nano /etc/apache2/sites-available/minuevositio.conf
+
+Cambia la linea 
+
+	DocumentRoot /home/ramiro/web 
+
+y guarda (F2)
+
+Ejecuta
+	sudo a2ensite mynewsite.conf
+
+	sudo a2dissite 000-default.conf
+
+Edita el archivo **apache2.conf** :
+
+	sudo nano /etc/apache2/apache2.conf
+
+
+	<Directory \home\ramiro\web>
+		Options Indexes FollowSymLinks
+		AllowOverride None
+		Require all granted
+	</Directory>
+
+
+
+
+
 4.1- Se verifica que este funcionando el servidor apache:
  
  En explorador se escribe la direccion del servidor: http://192.168.1.145/
@@ -70,32 +108,4 @@ en /etc/proftpd/proftpd.conf se escribe al final DefaultRoot ~
 
 sudo /etc/init.d/proftpd restart
 
-5 - Reconfigurar apache2.
 
-5.1 Copia el archivo de configuación del directorio raiz al nuevo sitio
-
-sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/minuevositio.conf
-
-5.2 En el nuevo sitio cambia el archivo raiz asi:
-
-sudo nano /etc/apache2/sites-available/minuevositio.conf
-
-Cambia la linea 
-
-DocumentRoot /home/ramiro/web 
-
-y gusrda (F2)
-
-Ejecuta
-sudo a2ensite mynewsite.conf
-
-sudo a2dissite 000-default.conf
-
-sudo nano /etc/apache2/apache2.conf
-
-
-<Directory \home\ramiro\web>
-	Options Indexes FollowSymLinks
-	AllowOverride None
-	Require all granted
-</Directory>
