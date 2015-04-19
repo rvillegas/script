@@ -17,11 +17,11 @@ Se baja [Ubuntu Server 64 bits](http://releases.ubuntu.com/14.04/ubuntu-14.04.2-
 
 En la instalación se sigue el procedimiento de la pagina de [Forat](http://www.forat.info/2008/08/servidor-en-linux-ubuntu-server-manual-completo/) 
 
-1-Se instala ubuntu server con ssh lamp samba cut print.
+**1-**Se instala ubuntu server con ssh lamp samba cut print.
 
-2-Se ajusta la red con adaptador puente, la tarjeta de red que se usa.
+**2-**Se ajusta la red con adaptador puente, la tarjeta de red que se usa.
 
-3-Se cambia /etc/network/interfaces
+**3-**Se cambia /etc/network/interfaces
 
 	auto eth0
 	iface eth0 inet static
@@ -33,17 +33,17 @@ En la instalación se sigue el procedimiento de la pagina de [Forat](http://www.
 
 Estas direcciones son especificas para el servidor en una red especifica (192.168.5.xxx)
 
-4-Se configura **LAMP** (Linux-Apache-Mysql-Php,Python,Perl)
+**4-**Se configura **LAMP** (Linux-Apache-Mysql-Php,Python,Perl)
 
-4.1 - Configurar apache2.
+**4.1-** Configurar apache2.
 
 En la versión 14.04 en mas complicado, los cambios hay que hacerlos en varios archivos
 
-4.1.1 Copia el archivo de configuación del directorio raiz al nuevo sitio
+**4.1.1-** Copia el archivo de configuación del directorio raiz al nuevo sitio
 
 	sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/minuevositio.conf
 
-4.1.2 En el nuevo sitio cambia el archivo raiz asi:
+**4.1.2-** En el nuevo sitio cambia el archivo raiz asi:
 
 	sudo nano /etc/apache2/sites-available/minuevositio.conf
 
@@ -54,14 +54,16 @@ Cambia la linea
 y guarda (F2)
 
 Ejecuta
-	sudo a2ensite mynewsite.conf
 
+	sudo a2ensite mynewsite.conf
 	sudo a2dissite 000-default.conf
+	sudo service apache2 reload
 
 Edita el archivo **apache2.conf** :
 
 	sudo nano /etc/apache2/apache2.conf
 
+Cambia el nombre del servidor de instalación **\var\www** por **\home\ramiro\web** 
 
 	<Directory \home\ramiro\web>
 		Options Indexes FollowSymLinks
@@ -69,11 +71,12 @@ Edita el archivo **apache2.conf** :
 		Require all granted
 	</Directory>
 
+Se guarda (F2) y se reinicia el servidor
 
 
+	sudo service apache2 restart
 
-
-4.1- Se verifica que este funcionando el servidor apache:
+**4.2-** Se verifica que este funcionando el servidor apache:
  
  En explorador se escribe la direccion del servidor: http://192.168.1.145/
  
