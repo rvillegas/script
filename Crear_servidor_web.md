@@ -29,8 +29,9 @@ En la instalación se sigue el procedimiento de la pagina de [Forat](http://www.
 	address 192.168.5.145
 	netmask 255.255.255.0
 	gateway 192.168.5.1
-	nameserver 208.67.222.222 208.67.220.220
+	dns-nameservers 8.8.8.8 8.8.4.4
 
+referencia:[dns-nameservers](http://askubuntu.com/questions/465729/ping-unknown-host-google-com-in-ubuntu-server)
 Estas direcciones son especificas para el servidor en una red especifica (192.168.5.xxx)
 
 **4-**Se configura **LAMP** (Linux-Apache-Mysql-Php,Python,Perl)
@@ -76,39 +77,57 @@ Se guarda (F2) y se reinicia el servidor
 
 	sudo service apache2 restart
 
+referencias:
+[Askubuntu](http://askubuntu.com/questions/413887/403-forbidden-after-changing-documentroot-directory-apache-2-4-6)
+[ubuntu](https://help.ubuntu.com/14.04/serverguide/httpd.html#http-configuration)
+
 **4.2-** Se verifica que este funcionando el servidor apache:
  
- En explorador se escribe la direccion del servidor: http://192.168.1.145/
+ Se crea el archivo test.html:
  
-4.2 - Verificar que este funcionando PHP
-en /var/wwww/html se crea archivo prueba.php asi:
+ 	sudo nano /home/ramiro/web/test.html
+ 	
+ Se agrega el siguiente texto:
+ 
+ 	<html>
+ 	  <body>
+ 	    Trabaja...
+	  </body>
+	 </html>
 
-<?php
+ En el explorador se escribe: [http://192.168.5.145/test.html](http://192.168.5.145/test.html) para este caso.
+ 
+**4.3** - Verificar que este funcionando PHP
 
-echo 'Probando PHP!!!'
+Se crea el archivo prueba.php en /home/ramiro/web/:
 
-?>
-Se escribe en el explorador:
-http://192.168.1.145/prueba.php
+	sudo nano /home/ramiro/web/prueba.php
+	
+Se escribe le siguiente codigo:
 
-Si imprime  Probando PHP!!!, esta ok
+	<?php
+	echo 'Probando PHP!!!'
+	?>
 
-4.3 En /etc/resolv.conf agregar:
 
-nameserver 8.8.8.8
-nameserver 8.8.4.4
+Se escribe en el explorador: [http://192.168.5.145/prueba.php](http://192.168.5.145/prueba.php)
 
-4.4 Cofigurar mysql:
+Si muestra ***Probando PHP!!!***, esta ok
 
-en  /etc/mysql/my.cnf se busca bind-address = 127.0.0.1 y se cambia por bind-address = 192.168.1.145
+**4.4-** Configurar mysql:
+
+en  /etc/mysql/my.cnf se busca **bind-address = 127.0.0.1**  y se cambia por **bind-address = 192.168.5.145**
 
 
 4.5 Se instala proftpd
 
 apt-get install proftpd  -> independiente   
 
-en /etc/proftpd/proftpd.conf se escribe al final DefaultRoot ~ 
+en /etc/proftpd/proftpd.conf se escribe al final **DefaultRoot ~ **
 
 sudo /etc/init.d/proftpd restart
 
+##Configuración de SQL SERVER para que pueda ser accesado desde el servidor.
 
+
+##Instalacion y configuración de freetds para que se pueda accesar sql server con php.
