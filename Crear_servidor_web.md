@@ -130,4 +130,27 @@ sudo /etc/init.d/proftpd restart
 ##Configuración de SQL SERVER para que pueda ser accesado desde el servidor.
 
 
+Se abre SQL Managment Studio, se abre el servidor que se va a utilizar.
+
+Se hace click derecho en la linea del servidor en el object explorer
+
+Se selecciona **Propiedades**
+
+En **Select a page** se selecciona **Security**.
+
+Se hace click en **SQL server & windows authentication**
+
+
+Se abre el **Microsoft SQL Server configuration manager**
+
+Se hace click en **SQL Server Services** en el panel izquierdo, en el panel derecho se hace click en **SQL Server(SQLEXPRESS)** o el nombre de la instancia que  se tenga.
+
+Se hace click en **Propiedades**, en el tab e log-on se selecciona Built-in account y se cambia a **Networking Service**
+
+
+
+
+
+
+
 ##Instalacion y configuración de freetds para que se pueda accesar sql server con php.
