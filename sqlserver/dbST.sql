@@ -291,7 +291,7 @@ while (@fecha_ini<@fecha_fin)
 			--		3. El nivel sea mayor que cero para evitar ruidos
 			SELECT top 1 nivel,FecUltPos,kms,Horas_Motor,Lat,Lon from [dbST].[dbo].[datosCAN]
 			where	FecUltPos>@fecha_ini 
-					and EstadoMotor=1 
+					--and EstadoMotor=1 
 					and matricula=@matricula
 					AND nivel>0
 					--and nivel is not null
@@ -306,7 +306,7 @@ while (@fecha_ini<@fecha_fin)
 		    
 			SELECT top 1 nivel,FecUltPos,kms,Horas_Motor,Lat,Lon from [dbST].[dbo].[datosCAN]
 			where	FecUltPos>@pFecha 
-					and EstadoMotor=1 
+					--and EstadoMotor=1 
 					and matricula=@matricula 
 					AND nivel>0					
 					--and nivel is not null
@@ -495,15 +495,15 @@ BEGIN
 	--lo considera que esta bien, de lo contrario hace el calculo registro por registro
 
 	SELECT top 1 @uComTot=[Combustible_Total],@uFecha=FecUltPos
-		FROM [dbo].[datosCAN]  where EstadoMotor=1
-		and [FecUltPos]>=@fecha_ini
+		FROM [dbo].[datosCAN]  where  --velocidad>0 --EstadoMotor=1 and
+		 [FecUltPos]>=@fecha_ini
 		and [FecUltPos]<=@fecha_fin
 		and matricula=@matricula
 		order by [FecUltPos] desc
 
 	SELECT top 1 @aComTot=[Combustible_Total],@aFecha=FecUltPos
-		FROM [dbo].[datosCAN]  where EstadoMotor=1
-		and [FecUltPos]>=@fecha_ini
+		FROM [dbo].[datosCAN]  where --velocidad>0 --EstadoMotor=1 and
+		 [FecUltPos]>=@fecha_ini
 		and [FecUltPos]<=@fecha_fin
 		and matricula=@matricula
 		order by [FecUltPos] asc
@@ -530,8 +530,8 @@ BEGIN
 DECLARE skt_cursor CURSOR FOR
 SELECT [Combustible_Total],FecUltPos
   FROM [dbo].[datosCAN]
-  where EstadoMotor=1
-  and [FecUltPos]>=@fecha_ini
+  where --velocidad>0 --EstadoMotor=1 and
+   [FecUltPos]>=@fecha_ini
   and [FecUltPos]<=@fecha_fin
   and matricula=@matricula
   order by [FecUltPos] asc
@@ -601,6 +601,8 @@ insert into @tbl (tabla,Nreg,ultima_fecha)
 select 'Tanqueos_dms' as tabla, count(*), max(Fecha) from Tanqueos_dms
 insert into @tbl (tabla,Nreg,ultima_fecha)
 select 'ped_tmp' as tabla, count(*), max(fecha_hora) from analisisInventarios.dbo.ped_tmp
+insert into @tbl (tabla,Nreg,ultima_fecha) 
+SELECT 'llantas', count(*), max(fecha)  FROM [dbInvLlantas].[dbo].salidas
 
 select * from @tbl
 END

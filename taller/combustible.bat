@@ -10,4 +10,6 @@ rem    No hay necesidad de copiar el archivo de combustibles
 rem    dentro del excel.
 
 
-D:\Taller\script\dms2csv.vbs "combustible.sql" "2014-01-03 00:00" "2014-01-05 00:00"
+D:\Taller\script\dms2csv.vbs "combustible.sql" "2014-01-09 00:00" "2014-01-12 00:00"
+
+copy "D:\Taller\resultados\combustible.sql.csv"  "\\tsclient\D\combustible.sql.csv"

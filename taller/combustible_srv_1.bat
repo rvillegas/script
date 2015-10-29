@@ -5,7 +5,7 @@ set/A month = %Date:~4,2%
 
 
 
-
+rem if %time% LEQ 20:00:00 goto Salir
 
 rem 1- En este archivo se cambian las fechas de acuerdo 
 rem    al rango que queramos actualIZAR.
@@ -25,8 +25,11 @@ D:\Taller\script\dms2csv.vbs "bodegas.sql"
 copy "D:\Taller\resultados\combustible_srv.sql.csv"  "\\tsclient\D\datos\csv\combustible_srv.sql.csv"
 copy "D:\Taller\resultados\bodegas.sql.csv"  "\\tsclient\D\datos\csv\bodegas.sql.csv"
 
-D:\Taller\script\dms2csv.vbs "inventario1.sql" "%year%" "%month%"
-copy "D:\Taller\resultados\inventario1.sql.csv"  "\\tsclient\D\datos\csv\inventario%month%.sql.csv"
+rem D:\Taller\script\dms2csv.vbs "inventario1.sql" "%year%" "%month%"
+rem copy "D:\Taller\resultados\inventario1.sql.csv"  "\\tsclient\D\datos\csv\inventario%month%.sql.csv"
+
+D:\Taller\script\dms2csv.vbs "inventario1.sql" 2015 3
+copy "D:\Taller\resultados\inventario1.sql.csv"  "\\tsclient\D\datos\csv\inventario3.sql.csv"
 
 D:\Taller\script\dms2csv.vbs "referencias.sql" "1900-01-01 00:00:00"
 D:\Taller\script\dms2csv.vbs "uso_referencias.sql" "20090101" "20151212"
@@ -43,3 +46,12 @@ copy "D:\Taller\resultados\pedidos.sql.csv"  "\\tsclient\D\datos\csv\pedidos.sql
 copy "D:\Taller\resultados\pedidos_entregados.sql.csv"  "\\tsclient\D\datos\csv\pedidos_entregados.sql.csv"
 copy "D:\Taller\resultados\pedidos_lin.sql.csv"  "\\tsclient\D\datos\csv\pedidos_lin.sql.csv"
 
+D:\Taller\script\dms2csv.vbs "horometros.sql"
+copy "D:\Taller\resultados\horometros.sql.csv"  "\\tsclient\D\datos\csv\horometros.sql.csv"
+
+
+
+shutdown /l
+:Salir
+
+rem set/p tt=0

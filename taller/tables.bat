@@ -1,8 +1,8 @@
 
 
-D:\Taller\script\dms2csv.vbs "tables.sql" 
+rem D:\Taller\script\dms2csv.vbs "tables.sql" 
 
-D:\Taller\script\dms2csv.vbs "campos.sql" 
-copy "D:\Taller\resultados\tables.sql.csv"  "\\tsclient\D\tables.sql.csv"
+D:\Taller\script\dms2csv.vbs "campos_2.sql" 
+rem copy "D:\Taller\resultados\tables.sql.csv"  "\\tsclient\D\tables.sql.csv"
 
-copy "D:\Taller\resultados\campos.sql.csv"  "\\tsclient\D\campos.sql.csv"
+rem copy "D:\Taller\resultados\campos_2.sql.csv"  "\\tsclient\D\campos_2.sql.csv"

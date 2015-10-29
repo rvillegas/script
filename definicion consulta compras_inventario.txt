@@ -1,0 +1,31 @@
+vd
+CREATE VIEW dbo.v_cc_consulta_compras_inventarios
+AS
+SELECT        	vcci.centro, 
+		vcci.Descrip_Centro, 
+		vcci.codigo, 
+		vcci.Descripcion_Item, 
+		vcci.ano, 
+		vcci.mes, 
+		SUM(vcci.Stock_ini) AS Stock_ini, 
+		SUM(vcci.Compras) AS Compras, 
+		SUM(vcci.Salidas) AS Salidas, 
+		SUM(vcci.Dev_compra) AS Dev_compra, 
+		SUM(vcci.Entrada_Traslado) AS Entrada_Traslado, 
+		SUM(vcci.Salida_Traslado) AS Salida_Traslado, 
+		SUM(vcci.Stock_Fin) AS Stock_Fin, 
+		vcci.Familia, 
+		vcci.Descrip_Familia, 
+		MAX(vccf.fecha_max) AS Ultima_fecha_compra, 
+		dbo.v_promedio.Promedio AS costo_promedio, 
+		dbo.v_promedio.Promedio * SUM(vcci.Stock_Fin) AS Costo_total, 
+		SUM(vcci.Stock_Fin) AS Expr1
+FROM            dbo.v_cc_consulta_compras_inventarios_bodegas AS vcci 
+LEFT OUTER JOIN
+                dbo.v_promedio 
+ON 		vcci.codigo = dbo.v_promedio.codigo AND vcci.ano = dbo.v_promedio.ano AND vcci.mes = dbo.v_promedio.mes 
+LEFT OUTER JOIN
+                dbo.v_cc_consulta_compras_fechas AS vccf 
+ON 		vcci.centro = vccf.centro AND vcci.codigo = vccf.codigo
+GROUP BY vcci.centro, vcci.Descrip_Centro, vcci.codigo, vcci.Descripcion_Item, vcci.ano, vcci.mes, vcci.Familia, vcci.Descrip_Familia, dbo.v_promedio.Promedio
+æ

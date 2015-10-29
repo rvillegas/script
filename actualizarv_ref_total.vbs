@@ -1,3 +1,6 @@
+
+On Error Resume Next
+
 includeFile "D:\datos\script\encabezado.vbs"
 
 Debug.WriteLine now
@@ -20,38 +23,69 @@ conexion= "Provider=SQLNCLI11;" _
 
 Set cnn=CreateObject("ADODB.Connection")
 Set cmd=CreateObject("ADODB.Command")
-    cnn.CommandTimeout=180
+    cnn.CommandTimeout=600
 	cnn.Open conexion
 	cmd.ActiveConnection =  cnn
 	cmd.CommandTimeout=900
+
+
+'si es falso actualiza el ultimo mes y ultimo ano, si es verdadero es para actualizar en grupo
+If false Then
+
+	ano=2015
+	For i=8 To 10
+    	sql="delete  from v_ref_total where ano=" &  ano & " and mes=" & i 'where ano=2015 and mes=" & Month(Now)
+    	archivo="D:\datos\csv\v_ref_total"  & (ano*100+i) & ".sql.csv"
+    	'sql="delete  from v_ref_total where ano=" &  Year(Now) & " and mes=" & Month(Now) 'where ano=2015 and mes=" & Month(Now)
+		cnn.Execute(sql)
+		CopiarCVS2SQL Archivo, "v_ref_total",conexion
+	Next
+Else
     Archivo="D:\datos\csv\v_ref_total"  & (Year(Now)*100+Month(Now)) & ".sql.csv"
 	Set fso= CreateObject("Scripting.FileSystemObject")
 	If Not fso.FileExists(Archivo) Then 
 		'MsgBox "No exite el archivo " & Archivo
 		WScript.Quit
 	End If
-
-
-'For i=12 To 11
 	'borrar datos del mes, actualizar por los nuevos
-    
     sql="delete  from v_ref_total where ano=" &  Year(Now) & " and mes=" & Month(Now) 'where ano=2015 and mes=" & Month(Now)
 	cnn.Execute(sql)
 	CopiarCVS2SQL Archivo, "v_ref_total",conexion
-
-'Next 
+    Archivo="D:\datos\csv\v_inv_doc_lin"  & (Year(Now)*100+Month(Now)) & ".sql.csv"
+	If Not fso.FileExists(Archivo) Then 
+		'MsgBox "No exite el archivo " & Archivo
+		WScript.Quit
+	End If
+    'actualizar_v_inv_doc_lin
+    sql="delete  from v_inv_doc_lin where ano=" &  Year(Now) & " and mes=" & Month(Now) 'where ano=2015 and mes=" & Month(Now)
+	cnn.Execute(sql)
+	CopiarCVS2SQL Archivo, "v_inv_doc_lin",conexion
 
 'Actualizar indicadores
 cmd.CommandText = "[dbo].[actualizarIndicador]"
 cmd.CommandType = 4  'adCmdStoredProc
-
 'Execute the stored procedure
 SET RS = cmd.Execute
 cmd.CommandText = "[dbo].[actualizar_detalle_Indicador]"
 SET RS = cmd.Execute
 
 SET cmd = Nothing
-Debug.WriteLine time	
+
+Debug.WriteLine time
+End If
+
+
+'Next 
+
+
+
+'Abril 23 2015 Se agrega actualizacion de vista v_inv_doc_lin con el fin de poder rasrtrear las entradas a inventarios que si sean compras.
+
+
+
+
+
+	
 Sub CopiarCVS2SQL(Archivo, tabla, Strcnn)
 	Dim i, linea, texto, j , k, l
 	Set cnn=CreateObject("ADODB.Connection")
@@ -185,6 +219,20 @@ A=Mid(fecha,7,4)
 'End If
 MDA=MM& "/" & DD & "/" & Year(fecha)
 End Function
+
+
+Sub actualizar_v_inv_doc_lin()
+    ano=2015
+    For mes=1 To 3
+    	Archivo="D:\datos\csv\v_inv_doc_lin" + Right("0" & mes,2) & ".sql.csv"
+
+    	sql="delete  from v_inv_doc_lin where ano=" &  ano & " and mes=" & mes 'where ano=2015 and mes=" & Month(Now)
+		cnn.Execute(sql)
+		CopiarCVS2SQL Archivo, "v_inv_doc_lin",conexion
+	Next 
+
+End Sub
+
 
 Sub includeFile(fSpec)
     executeGlobal CreateObject("Scripting.FileSystemObject").openTextFile(fSpec).readAll()

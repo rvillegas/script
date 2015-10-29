@@ -30,6 +30,10 @@ Set cnn=CreateObject("ADODB.Connection")
 	End If
 
 
+
+
+
+
 'For i=12 To 11
 	'borrar datos del mes, actualizar por los nuevos
     'sql="delete  from inventarios where ano=2015 and mes=2" 
@@ -38,6 +42,12 @@ Set cnn=CreateObject("ADODB.Connection")
 	CopiarCVS2SQL Archivo, "inventarios",conexion
 
 'Next 
+	If fso.FileExists("D:\datos\csv\bodegas.sql.csv") Then 
+    	sql="delete  from bodegas"
+		cnn.Execute(sql)
+		CopiarCVS2SQL "D:\datos\csv\bodegas.sql.csv", "bodegas",conexion
+	End If
+
 	If fso.FileExists("D:\datos\csv\referencias.sql.csv") Then 
     	sql="delete  from referencias"
 		cnn.Execute(sql)

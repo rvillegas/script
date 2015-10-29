@@ -1619,6 +1619,54 @@ END
 
 
 
+--cos_ent_vrt
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date, ,>
+-- Description:	<Description, ,>
+-- =============================================
+
+--La diferencia de esta funcion con ultima_entrada es que no considera los inventarios mayores a una fecha,
+--para poder evaluar periodos distintos al actual. Si por ejemplo la ultima entrada fue 2014 06, hay salidas en 2014 12, y se 
+--quiere evaluar en 2014 10, debe devolver 2014 6 y no 2014 12  
+
+create FUNCTION [dbo].[cos_ent_vrt]
+(
+	@codigo varchar(20),
+	@bodega int,
+	@anomes int
+)
+RETURNS numeric(18,2)
+AS
+BEGIN
+	-- Declare the return variable here
+	--Se plantea una mejora: Para no tener que multiplicar y poder utilizar los indices, se separa año de mes
+	--se utiliza las siguientes formulas 
+	--am2>=am1	(a2>a1 or (a2=a1 and m2>=m1))
+	--am2=am1	a2=a1 and m2=m1
+	--am2<=am1	(a2<a1 or (a2=a1 and m2<=m1))
+
+	DECLARE @ResultVar int
+	--DECLARE @ano int, @mes int
+	--set @ano=cast(@anomes/100 as int)
+	--set @mes=@anomes-@ano*100
+	--declare @anomes int
+	--set @anomes=@ano*100+@mes
+	set @ResultVar=(SELECT top 1 cos_ent
+					FROM [dbo].[v_ref_total]
+					where codigo=@codigo and bodega=@bodega and (can_ent>0)
+					      and ano*100+mes<=@anomes
+						  --and (ano<@ano or (ano=@ano and mes<=@mes))
+					order by ano*100+mes desc
+					  --order by ano desc, mes desc
+					  )
+	RETURN @ResultVar
+
+END
+
+
+
 --ultima_entrada
 
 -- =============================================
@@ -1800,6 +1848,54 @@ END
 
 
 
+--ultima_compra
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date, ,>
+-- Description:	<Description, ,>
+-- =============================================
+
+--La diferencia de esta funcion con ultima_entrada es que no considera los inventarios mayores a una fecha,
+--para poder evaluar periodos distintos al actual. Si por ejemplo la ultima entrada fue 2014 06, hay salidas en 2014 12, y se 
+--quiere evaluar en 2014 10, debe devolver 2014 6 y no 2014 12  
+
+create FUNCTION [dbo].[ultima_compra]
+(
+	@codigo varchar(20),
+	@centro int,
+	@anomes int
+)
+RETURNS int
+AS
+BEGIN
+	-- Declare the return variable here
+	--Se plantea una mejora: Para no tener que multiplicar y poder utilizar los indices, se separa año de mes
+	--se utiliza las siguientes formulas 
+	--am2>=am1	(a2>a1 or (a2=a1 and m2>=m1))
+	--am2=am1	a2=a1 and m2=m1
+	--am2<=am1	(a2<a1 or (a2=a1 and m2<=m1))
+
+	DECLARE @ResultVar int
+	--DECLARE @ano int, @mes int
+	--set @ano=cast(@anomes/100 as int)
+	--set @mes=@anomes-@ano*100
+	--declare @anomes int
+	--set @anomes=@ano*100+@mes
+	set @ResultVar=(SELECT top 1 ano*100+mes
+					FROM [dbo].[compras_inventarios]
+					where codigo=@codigo and centro=@centro and (compras+Entrada_Traslado>0)
+					      and ano*100+mes<=@anomes
+						  --and (ano<@ano or (ano=@ano and mes<=@mes))
+					order by ano*100+mes desc
+					  --order by ano desc, mes desc
+					  )
+	RETURN @ResultVar
+
+END
+
+
+
 --traslados_posibles
 
 -- =============================================
@@ -1893,6 +1989,66 @@ BEGIN
 
 	-- Return the result of the function
 	RETURN @ResultVar
+
+END
+
+
+
+--minimo
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date, ,>
+-- Description:	<Description, ,>
+-- =============================================
+CREATE FUNCTION minimo
+(
+  @a decimal(18,6),
+  @b decimal(18,6)
+)
+RETURNS decimal(18,6)
+AS
+BEGIN
+	-- Declare the return variable here
+	DECLARE @ResultVar decimal(18,6)
+
+	if (@a>@b)
+		set @ResultVar=@b
+	else
+		set @ResultVar=@a
+		
+	return 	@ResultVar	
+
+
+END
+
+
+
+--maximo
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date, ,>
+-- Description:	<Description, ,>
+-- =============================================
+CREATE FUNCTION [dbo].[maximo]
+(
+  @a decimal(18,6),
+  @b decimal(18,6)
+)
+RETURNS decimal(18,6)
+AS
+BEGIN
+	-- Declare the return variable here
+	DECLARE @ResultVar decimal(18,6)
+
+	if (@a<@b)
+		set @ResultVar=@b
+	else
+		set @ResultVar=@a
+		
+	return 	@ResultVar	
+
 
 END
 
@@ -2090,6 +2246,204 @@ declare @costo numeric(18,6), @i int, @bod_fue int, @num int, @tipo varchar(15)
 		set @i=@i+1
 		
     END	
+	RETURN 
+END
+
+
+
+--indicador_naslly
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE FUNCTION [dbo].[indicador_naslly] 
+(
+	@anomes int,
+	@centro int,
+	@tipo varchar(3)
+
+)
+RETURNS 
+@stk_sal TABLE 
+(
+	ano smallint,
+	mes smallint,
+	codigo varchar(20),
+	centro int,
+	tipo  varchar(3),
+	costo_promedio decimal(19,3),
+	stk0 decimal(18,3),
+	sal0 decimal(18,3),
+	stk1 decimal(18,3),
+	sal1 decimal(18,3),
+	stk2 decimal(18,3),
+	sal2 decimal(18,3),
+	stk3 decimal(18,3),
+	sal3 decimal(18,3)
+)
+AS
+BEGIN
+	-- Fill the table variable with the rows for your result set
+	declare @gru table(g varchar(5),d varchar(50))
+declare @am0 int, @am1 int, @am2 int, @am3 int
+
+--
+if (@tipo='MEC')
+	insert into @gru
+	select *  from dbo.gr_mecanica() 
+else
+	begin
+		set @tipo='CIV'
+		insert into @gru
+		select *  from dbo.gr_civil() 
+	end
+	 
+set @am0=@anomes
+set @am1 = dbo.anomes_add_mes(1,@am0)
+set @am2 = dbo.anomes_add_mes(2,@am0)
+set @am3 = dbo.anomes_add_mes(3,@am0)
+
+--Inserta todos los registros de compras y el primer mes.
+
+insert into @stk_sal
+--SELECT      m0.ano, m0.mes, m0.codigo, m0.bodega, m0.centro, @tipo, m0.costo_promedio,
+--usar el primero cuando se organice x bodega
+SELECT      ano, m0.mes, m0.codigo, m0.centro, @tipo, m0.costo_promedio,
+			--stock=compras+traslados
+			(m0.Compras + m0.Entrada_Traslado) as stk0,
+			--salidas_totales=salidas+devoluciones+salidas_traslados
+			--salidas=min((salidas_Totales,stock))
+			dbo.minimo((m0.Salidas+m0.Dev_compra+m0.Salida_Traslado),
+						(m0.Compras + m0.Entrada_Traslado)) as Sal0,
+						Cast( 0.0 as decimal(18,3)) as Stk1,
+						Cast( 0.0 as decimal(18,3)) as Sal1,
+						Cast( 0.0 as decimal(18,3)) as Stk2,
+						Cast( 0.0 as decimal(18,3)) as Sal2,
+						Cast( 0.0 as decimal(18,3)) as Stk3,
+						Cast( 0.0 as decimal(18,3)) as Sal3
+FROM            compras_inventarios AS m0 
+WHERE        (m0.ano*100+m0.mes=@am0) AND (m0.Compras > 0) AND (m0.centro = @centro) and m0.Familia in (select g from @gru)
+
+update @stk_sal
+set stk1=stk0-sal0,
+	stk2=stk0-sal0,
+	stk3=stk0-sal0
+
+--Inserta el segundo mes
+update @stk_sal
+Set         --stock=max(0,Stock_antrior-Salidas_anteriores) o sea que si da negativo queda en 0
+			Stk1=dbo.maximo(0,m0.stk0-m0.Sal0),
+			--salidas_totales=m1.Salidas-m1.Dev_compra-m1.Salida_Traslado
+			--salidas=min((stk1), salidas_totales)
+			Sal1=dbo.minimo(dbo.maximo(0,dbo.maximo(0,m0.stk0-m0.Sal0)),
+						(m1.Salidas+m1.Dev_compra+m1.Salida_Traslado))
+			from @stk_sal as m0
+left outer join
+                compras_inventarios AS m1 ON m0.codigo = m1.codigo AND m0.centro = m1.centro  --and m0.bod=m1.bodega--and 
+where m1.ano*100+m1.mes=@am1
+
+update @stk_sal
+set stk2=stk1-sal1,
+	stk3=stk1-sal1
+
+--Inserta el tercer mes
+update @stk_sal
+Set     
+			Stk2=dbo.maximo(0,m0.stk1-m0.Sal1),
+			--               stk_ini_1-  
+			Sal2=dbo.minimo(dbo.maximo(0,dbo.maximo(0,m0.stk1-m0.Sal1)),
+						(m1.Salidas+m1.Dev_compra+m1.Salida_Traslado))
+			from @stk_sal as m0
+left outer join
+            compras_inventarios AS m1 ON m0.codigo = m1.codigo AND m0.centro = m1.centro   --and m0.bod=m1.bodega --and m1.ano*100+m1.mes=@am2
+
+where m1.ano*100+m1.mes=@am2
+--Inserta el cuarto mes
+
+update @stk_sal
+Set stk3=stk2-sal2
+
+update @stk_sal
+Set     
+			Stk3=dbo.maximo(0,m0.stk2-m0.Sal2),
+			--               stk_ini_1-  
+			Sal3=dbo.minimo(dbo.maximo(0,dbo.maximo(0,m0.stk2-m0.Sal2)),
+						(m1.Salidas+m1.Dev_compra+m1.Salida_Traslado))
+			from @stk_sal as m0
+left outer join
+            compras_inventarios AS m1 ON m0.codigo = m1.codigo AND m0.centro = m1.centro   --and m0.bod=m1.bodega --and m1.ano*100+m1.mes=@am3
+where m1.ano*100+m1.mes=@am3
+	RETURN 
+END
+
+
+
+--indicador_naslly_ano
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE FUNCTION [dbo].[indicador_naslly_ano]
+(
+	-- Add the parameters for the function here
+	@ano int,
+	@centro int,
+	@tipo varchar(3)
+)
+RETURNS 
+@tbl TABLE 
+(
+	ano int,
+	mes int,
+	pm0 decimal(18,6),
+	pm1 decimal(18,6),
+	pm2 decimal(18,6),
+	pm3 decimal(18,6),
+	pm4 decimal(18,6),
+	com decimal(18,6),
+	me0 decimal(18,6),
+	me1 decimal(18,6),
+	me2 decimal(18,6),
+	me3 decimal(18,6),
+	me4 decimal(18,6)
+)
+AS
+BEGIN
+	declare @um int,@i int, @anomes int
+	-- Fill the table variable with the rows for your result set
+	-- Averigua cual es el maximo mes
+	set @um = (SELECT max(mes) FROM [dbo].[compras_inventarios] where ano=@ano)
+	set @i=1
+	while @i<=@um
+		begin
+			set @anomes=@ano*100+@i	
+
+			insert into @tbl (ano,mes,pm0,pm1,pm2,pm3,pm4,com,me0,me1,me2,me3,me4)
+			SELECT @ano,@i,
+				sum(sal0*costo_promedio)/(sum(stk0*costo_promedio)+0.001),
+				sum(sal1*costo_promedio)/(sum(stk0*costo_promedio) +0.001),
+				sum(sal2*costo_promedio)/(sum(stk0*costo_promedio) +0.001),
+				sum(sal3*costo_promedio)/(sum(stk0*costo_promedio) +0.001),
+				sum((stk3-sal3)*costo_promedio)/(sum(stk0*costo_promedio)+0.001),
+				sum(stk0*costo_promedio),
+				sum(sal0*costo_promedio),
+				sum(sal1*costo_promedio),
+				sum(sal2*costo_promedio),
+				sum(sal3*costo_promedio),
+				sum((stk3-sal3)*costo_promedio)
+			FROM [dbo].[indicador_naslly] (@anomes,@centro,@tipo)
+			set @i=@i+1
+		end
+
+
+
+	-- Hace el ciclo y recoge los datos, va agregando a 
+
+	
 	RETURN 
 END
 
@@ -2337,6 +2691,46 @@ END
 
 
 
+--detalle_indicador_n
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+CREATE FUNCTION [dbo].[detalle_indicador_n]
+(
+	-- Add the parameters for the function here
+	@anomes int,
+	@centro int,
+	@tipo varchar(3)
+
+
+)
+RETURNS TABLE 
+AS
+RETURN 
+(
+
+select j.destino, j.cos_des,k.codigo,k.descripcion,k.costo_stock,k.stock 
+from
+(select  i.destino, sum(i.costo) as cos_des 
+from
+(select	dbo.destino(@anomes,@centro,codigo) as destino ,costo_promedio*stk3 as costo
+FROM	[dbo].[indicador_naslly] (@anomes,@centro,@tipo) where stk3>0 ) as i
+group by i.destino) as j
+inner join
+(select	dbo.destino(@anomes,@centro,i.codigo) as destino , i.codigo, r.descripcion, stk3*costo_promedio as costo_stock, stk3 as stock
+FROM	[dbo].[indicador_naslly] (@anomes,@centro,@tipo) as i
+left join referencias as r
+on   i.codigo=r.codigo
+ where stk3>0 ) as k
+ on j.destino=k.destino
+
+)
+
+
+
 --inv_sin_mov_vrt
 
 -- =============================================
@@ -2456,6 +2850,35 @@ BEGIN
 	end
 
 	RETURN 
+END
+
+
+
+--destino
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date, ,>
+-- Description:	<Description, ,>
+-- =============================================
+CREATE FUNCTION [dbo].[destino]
+(
+	@anomes int,
+	@centro int,
+	@codigo varchar(20)	
+)
+RETURNS varchar(255)
+AS
+BEGIN
+	-- Declare the return variable here
+	DECLARE @res varchar(255)
+set @res=isnull((select top 1 destino  from v_ref_total as r
+			left join bodegas as b
+			on b.bodega=r.bodega 
+			where 
+			codigo=@codigo and ano*100+mes=@anomes and not destino like '%GASTO%' and b.centro=@centro),'Sin destino...')
+return @res
+
 END
 
 

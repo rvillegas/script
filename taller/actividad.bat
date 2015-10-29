@@ -1,10 +1,10 @@
 rem argumentos: fecha
 
 
-D:\Taller\script\dms2csv.vbs "flt_actividad_equipos.sql" "2014" "09"
-D:\Taller\script\dms2csv.vbs "flt_actividad_equipos_lin.sql" "2014" "09"
-D:\Taller\script\dms2csv.vbs "flt_actividad_equipos_consumos.sql" "2014" "09"
-D:\Taller\script\dms2csv.vbs "flt_actividad_equipos_inspeccion.sql" "2014" "09"
+D:\Taller\script\dms2csv.vbs "flt_actividad_equipos.sql" "2014" "11"
+D:\Taller\script\dms2csv.vbs "flt_actividad_equipos_lin.sql" "2014" "11"
+D:\Taller\script\dms2csv.vbs "flt_actividad_equipos_consumos.sql" "2014" "11"
+D:\Taller\script\dms2csv.vbs "flt_actividad_equipos_inspeccion.sql" "2014" "11"
 D:\Taller\script\dms2csv.vbs "flt_equipos_au.sql" "2014" "09"
 
 D:\Taller\script\dms2csv.vbs "tall_operarios.sql" 

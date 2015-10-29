@@ -1,5 +1,5 @@
 
-SELECT     	p.descripcion , l.bodega,   l.fec, l.codigo,r.descripcion, l.tipo, l.numero, CONVERT(decimal(18, 2), l.cantidad),l.destino  
+SELECT     	p.descripcion , l.bodega,   l.fec, l.codigo,r.descripcion, l.tipo, l.numero, Cast((l.cantidad+0.5) as int) as cnt,l.destino  
                 FROM dbo.documentos_lin AS l  
                 LEFT OUTER JOIN dbo.v_destino_padre_gto_generales_AMV_UNION AS p ON l.destino = p.Destino 
                 LEFT OUTER JOIN                        dbo.referencias AS r ON l.codigo = r.codigo 

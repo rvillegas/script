@@ -1,5 +1,7 @@
 SELECT      
-l.codigo, max(l.fec) as ultima_fecha, p.codigo_interno as destino
+	l.codigo,
+	convert(VARCHAR(19), max(l.fec) ,120) as ultima_fecha,
+ 	p.codigo_interno as destino
 FROM     documentos_lin l left join terceros t on l.nit=t.nit join conceptos_distribucion p   on l.destino = p.codigo   
 left join referencias r   on l.codigo = r.codigo   
 left join referencias_gru g   on r.grupo = g.grupo   

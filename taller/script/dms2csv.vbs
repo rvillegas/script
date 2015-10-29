@@ -10,7 +10,7 @@ sub main()
    'cn.connectionString="Provider=SQLOLEDB;server=PC-RAMIRO\SQLEXPRESS;Database=dbST;Integrated Security=SSPI;"
                 '& "DataTypeCompatibility=80; MARS Connection=True"
     cn.connectionString="Provider=SQLOLEDB;server=cchehet\mssqlserverco;Database=dms_condor;Integrated Security=SSPI;"
-    cn.CommandTimeout=180
+ cn.CommandTimeout=180
    cn.open
    'æ
    sql=LeerArchivo(sqlfile)

@@ -8,7 +8,7 @@ SELECT     	substring(p.descripcion,1,10) as equipo , l.bodega,convert(VARCHAR(1
                 LEFT OUTER JOIN                        dbo.bodegas AS b ON l.bodega = b.bodega  
                 WHERE  
                     g.grupo ='03'     
-                and l.fec  >=dateadd(day,-30,getdate()) 
+                and l.fec  >=dateadd(day,-60,getdate()) 
                 and l.sw = case when  l.maneja_inventario = 'N' then '3' else '11' end  
 		and l.sw = case when  l.maneja_inventario <> 'N' then '11' else '3' end  
 		ORDER BY    l.bodega,p.descripcion, b.descripcion, g.descripcion, l.fec, r.descripcion  

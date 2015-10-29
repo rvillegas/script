@@ -1,7 +1,7 @@
 rem argumentos: año, mes 
 
 
-D:\Taller\script\dms2csv.vbs "inventario.sql" "2014" "5"
+D:\Taller\script\dms2csv.vbs "inventario.sql" "2014" "11"
 D:\Taller\script\dms2csv.vbs "referencias.sql" "1900-01-01 00:00:00"
 D:\Taller\script\dms2csv.vbs "uso_referencias.sql" "20090101" "20141212"
 
